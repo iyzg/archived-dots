@@ -1,4 +1,4 @@
-#include "/home/plasma/colors/bluetype"
+#include "/home/plasma/.xrdb/aurora"
 
 ! Settings
 URxvt.scrollBar:       false

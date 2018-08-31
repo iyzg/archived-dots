@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# A simple script to do screenrecord using ffmpeg
+# Install ffmpeg first if You didn't have
+# I usually launch this script using rofi
+# Cheers! Addy
+
+ffmpeg -f x11grab \
+-s 1920x1080 \
+-an -i :0.0 \
+-c:v libvpx \
+-b:v 5M \
+-crf 10 \
+-quality realtime \
+-y ~/Videos/record.mkv

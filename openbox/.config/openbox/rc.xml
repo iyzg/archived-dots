@@ -23,43 +23,43 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Norden-Night</name>
+    <name>Aurora</name>
     <titleLayout>MC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <!-- Element Fonts -->
     <font place="ActiveWindow">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="MenuItem">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>RobotoMono Nerd Font</name>
+      <name>scientifica</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
