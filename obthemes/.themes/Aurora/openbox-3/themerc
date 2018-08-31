@@ -1,0 +1,39 @@
+# Decorator
+window.active.title.bg.color: #272a2a
+window.inactive.title.bg.color: #272a2a
+window.*.label.text.color: #eaeaed
+window.*.button.*.image.color: #eaeaed
+
+# Borders
+window.handle.width: 0
+window.client.padding.width: 0
+border.width: 0
+
+# Title
+padding.width: 8
+padding.height: 8
+window.*.title.bg: Solid Flat
+window.*.*.bg: Parentrelative
+window.label.text.justify: center
+
+# Menu
+menu.border.width: 12
+menu.border.color: #272a2a
+menu.overlap.x: -15
+menu.*.bg: flat solid
+menu.*.bg.color: #272a2a
+menu.*.color: #eaeaed
+menu.title.text.color: #eaeaed
+menu.items.text.color: #eaeaed
+menu.items.active.text.color: #edf3ff
+menu.title.text.justify: center
+
+# OSD
+osd.border.width: 1
+osd.border.color: #272a2a
+osd.bg: flat solid
+osd.bg.color: #272a2a
+osd.label.bg: flat solid
+osd.label.bg.color: #272a2a
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #eaeaed

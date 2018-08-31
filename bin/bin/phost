@@ -1,0 +1,10 @@
+#! /bin/sh
+
+if [ "$1" != "" ]; then
+    PICTURE=$1
+    curl -F'file=@$PICTURE' http://0x0.st
+else
+    echo "Please pass a file to upload."
+fi
+
+

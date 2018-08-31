@@ -1,0 +1,18 @@
+# Autostart
+# Background
+feh --bg-fill ~/Wallpapers/nightWaterfallOneUnedited.jpg
+
+# Xresources
+xrdb -merge .Xresources &
+
+# Notifications
+dunst &
+
+# Compositor
+compton &
+
+# Music
+mpd &
+
+# Bar
+#tint2 -c ~/.config/tint2/meridianam.tint2rc &
