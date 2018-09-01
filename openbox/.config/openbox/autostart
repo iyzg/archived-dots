@@ -1,12 +1,21 @@
 # Autostart
 # Background
-feh --bg-fill ~/Wallpapers/nightWaterfallOneUnedited.jpg
+feh --bg-fill ~/wallpaper/bridgeTwoEdited.jpg
 
 # Xresources
 xrdb -merge .Xresources &
 
+# Wifi
+nm-applet &
+
+# Volume
+volumeicon &
+
+# Clipboard
+clipit &
+
 # Notifications
-dunst &
+#dunst &
 
 # Compositor
 compton &
@@ -14,5 +23,6 @@ compton &
 # Music
 mpd &
 
+
 # Bar
-#tint2 -c ~/.config/tint2/meridianam.tint2rc &
+tint2 -c ~/.config/tint2/aurora.tint2rc &

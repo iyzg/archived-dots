@@ -1,0 +1,22 @@
+#! /bin/sh
+## thumbnail view of your current wall
+## dependant on feh
+## dkeg 2015
+
+## using different file to store wall
+. $HOME/wallpaper/bridgeTwoUnedited.jpg
+
+# set your geometry as desired
+# adjust $display as needed based; this is based on my setup
+# for example; my config is ... hsetroot -fill /data/walls/wall.jpg &
+# the -R .01 is redraw. Without it, the preview comes up blank at first
+
+# set the variables
+geom='-g 250x175+550+293'
+params=" --zoom fill"
+#display=$(cat ~/.xinitrc|grep hsetroot|cut -d ' ' -f3|awk '{sub(/&/,"");print}')
+#echo $display
+
+# show the preview
+feh $geom $params $wall
+#feh $geom $params $display

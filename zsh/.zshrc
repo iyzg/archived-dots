@@ -16,6 +16,7 @@ alias ls='ls --color=auto'
 alias pcinstall='sudo pacman -S'
 alias pcupdate='sudo pacman -Syu'
 alias pcclean='sudo pacman -Rs $(pacman -Qqdt)'
+alias vim="nvim"
 
 # Oh-My-ZSH
 # PATH

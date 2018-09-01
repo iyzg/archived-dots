@@ -1,5 +1,25 @@
 #include "/home/plasma/.xrdb/aurora"
 
+! Colors  
+*background:   bg  
+*foreground:   fg  
+*color0:      blk  
+*color8:      bblk  
+*color1:      red  
+*color9:      bred  
+*color2:      grn  
+*color10:     bgrn  
+*color3:      ylw  
+*color11:     bylw  
+*color4:      blu  
+*color12:     bblu  
+*color5:      mag  
+*color13:     bmag  
+*color6:      cyn  
+*color14:     bcyn  
+*color7:      wht  
+*color15:     bwht  
+
 ! Settings
 URxvt.scrollBar:       false
 URxvt.internalBorder:  25
@@ -14,6 +34,6 @@ Xft.rgba: rgb
 Xft.dpi: 96
 
 ! Font
-URxvt.font: xft:scientifica:size=9
+URxvt.font: xft:RobotoMono Nerd Font:size=9
 
 

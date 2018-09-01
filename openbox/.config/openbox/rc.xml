@@ -29,37 +29,37 @@
     <animateIconify>yes</animateIconify>
     <!-- Element Fonts -->
     <font place="ActiveWindow">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="MenuItem">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>scientifica</name>
+      <name>RobotoMono Nerd Font</name>
       <weight>Normal</weight>
       <slant>Normal</slant>
       <size>8</size>
