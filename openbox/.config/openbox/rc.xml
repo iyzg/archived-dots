@@ -24,7 +24,7 @@
   <!-- OB Theme -->
   <theme>
     <name>Circulus</name>
-    <titleLayout>MC</titleLayout>
+    <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <!-- Element Fonts -->
