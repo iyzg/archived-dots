@@ -25,4 +25,4 @@ mpd &
 
 
 # Bar
-tint2 -c ~/.config/tint2/aurora.tint2rc &
+tint2 -c ~/.config/tint2/minus.tint2rc &

@@ -87,6 +87,13 @@
                 </action>
             </item>
         </menu>
+        <menu id="utilities-menu" label="Utility">
+            <item label="Screenshot">
+                <action name="Execute">
+                    <execute>/home/plasma/bin/screeny</execute>
+                </action>
+            </item>
+        </menu>
         <menu id="extras-menu" label="ETC">
             <item label="Merge">
                 <action name="Execute">

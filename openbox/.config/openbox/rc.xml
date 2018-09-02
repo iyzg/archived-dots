@@ -23,7 +23,7 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Aurora</name>
+    <name>Circulus</name>
     <titleLayout>MC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
