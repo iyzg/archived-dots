@@ -1,41 +1,48 @@
 /* Aurora's Theme: Slate */
+
+:root {
+    --background: #272a2a;
+    --red: #b05f5f;
+    --foreground: #eaeaed;
+    --cayn: #558888;
+}
 /* Channel List Section */
 .scroller-2wx7Hm {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Guild Messages Section */
 .scroller-wrap .scroller {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Memeber List Section */
 .theme-dark .members-1998pB {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Profile + Voice Settings Section */
 .theme-dark .container-2Thooq, 
 .theme-light .container-2Thooq {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Server Name Header */
 .header-2o-2hj, 
 .header-2o-2hj:hover {
-    background-color: #272a2a;  
+    background-color: var(--background);  
     box-shadow: none;
 }
 
 /* Channel Name Header + Channel Desc. */
 .theme-dark .title-3qD0b- {
-    background-color: #272a2a;
+    background-color: var(--background);
     box-shadow: none;
 }
 
 /* Server Messages */
 .theme-dark .markup-2BOw-j {
-    color: #eaeaed;
+    color: var(--foreground);
 }
 
 /* Read Channels */
@@ -43,50 +50,50 @@
 .nameDefaultVoice-3WUH7s, 
 .nameLockedText-3pqQcL, 
 .nameLockedVoice-26MhB1 {
-    color: #eaeaed;
+    color: var(--foreground);
 }
 
 /* Unread Channels */
 .nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI {
-    color: #b05f5f;
+    color: var(--red);
 }
 
 /* Text Box Section */
 .theme-dark .channelTextArea-rNsIhG {
-    background-color: #272a2a;
+    background-color: var(--background);
     border-top: none;
 }
 
 .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 .theme-dark .textArea-2Spzkt {
-    background-color: #272a2a;
-    color: #eaeaed;
+    background-color: var(--background);
+    color: var(--foreground);
     margin: none;
 }
 
 .textArea-2Spzkt {
     margin: none;
-    margin-color: #272a2a;
+    margin-color: var(--background);
 }
 
 /* User Is Typing... Section */
 .theme-dark .typing-2GQL18 {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* User/Channel Mention */
 .theme-dark .wrapperHover-1GktnT {
-    color: #558888;
+    color: var(--cyan);
 }
 
 /* Is Mentioned Section */
 .isMentionedCozy-3isp7y:after {
     border-left: none;
-    background: #272a2a;
-    background-color: #272a2a;
+    background: var(--background);
+    background-color: var(--background);
 }
 
 /* Message Divider */
@@ -97,7 +104,7 @@
 
 /* Default Username */
 .theme-dark .username-_4ZSMR {
-    color: #eaeaed;
+    color: var(--foreground);
 }
 
 /* Member List Button Active */
@@ -107,61 +114,61 @@
 
 /* Member List Role Dividers */
 .theme-dark .membersGroup-v9BXpm {
-    color: #eaeaed;
+    color: var(--foreground);
 }
 
 /* Attach Button */
 .attachButton-1UjEWA {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* DM List */
 .scroller-2FKFPG {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* DM Search Bar */
 .private-channels .search-bar {
-    background-color: #272a2a;
+    background-color: var(--background);
     box-shadow: none;
 }
 
 .private-channels .search-bar .search-bar-inner input {
-    background-color: #272a2a;
-    color: #eaeaed;
+    background-color: var(--background);
+    color: var(--foreground);
 }
 
 .search-bar .search-bar-inner {
-    background: #272a2a;
-    background-color: #272a2a;
+    background: var(--background);
+    background-color: var(--background);
     border: none;
     border-radius: none;
 }
 
 /* Delete Prompt Section */
 .footer-2yfCgX, .header-1R_AjF {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 .theme-dark .footer-2yfCgX {
-    background-color: #272a2a;
+    background-color: var(--background);
     box-shadow: none;
 }
 
 /* Delete Button */
 .lookFilled-1Gx00P.colorRed-1TFJan {
-    background-color: #b05f5f;
-    color: #eaeaed;
+    background-color: var(--red);
+    color: var(--foreground);
 }
 
 /* New Messages */
 .theme-dark .divider-3gKybi.dividerRed-MKoLlr>span {
-    background-color: #272a2a;
-    color: #b05f5f;
+    background-color: var(--background);
+    color: var(--red);
 }
 
 .theme-dark .divider-3gKybi.dividerRed-MKoLlr>div {
-    background: #b05f5f;
+    background: var(--red);
 }
 
 
@@ -180,74 +187,74 @@
     border: 0px solid transparent !important;
     border-left: 0px solid transparent !important;
     border-radius: 2px !important;
-    background-color: #272a2a !important;
+    background-color: var(--background) !important;
 }
 
 /* Is Mentioned Bar */
 .theme-dark .isMentioned-N-h9aa {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Code Blocks */
 .theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {
-    background-color: #272a2a;
+    background-color: var(--background);
     border: none;
 }
 
 .theme-dark .hljs {
-    background-color: #272a2a;
+    background-color: var(--background);
     border: none;
 }
 
 /* Links */
 .theme-dark .embedInner-1-fpTo {
-    background-color: #272a2a;
+    background-color: var(--background);
     border: none;
     border-radius: none;
 }
 
 .theme-dark .embedPill-1Zntps {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 .theme-dark .markup-2BOw-j a {
-    color: #558888;
+    color: var(--cyan);
 }
 
 .theme-dark .embedTitleLink-1Zla9e {
-    color: #558888;
+    color: var(--cyan);
 }
 
 /* Embed Title */
 .theme-dark .embedAuthorName-3mnTWj, .theme-dark .embedFieldName-NFrena, .theme-dark .embedTitle-3OXDkz {
-    color: #eaeaed!important;
+    color: var(--foreground)!important;
 }
 
 /* Text Box */
 .theme-dark .inner-zqa7da {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Attach Button Seperator */
 .theme-dark .attachButtonDivider-3Glu60 {
-    background-color: #272a2a;
+    background-color: var(--background);
 }
 
 /* Discord Icon Seperator */
 .theme-dark .guildSeparator-1X4GQ1:after {
-    background: #272a2a;
+    background: var(--background);
 }
 
 /* Server Add Button */
 .theme-dark .guildsAdd-21_IdK {
-    background: #272a2a;
-    border-color: #272a2a;
-    color: #eaeaed;
+    background: var(--background);
+    border-color: var(--background);
+    color: var(--foreground);
 }
 
 /* Unread Popout */
 .unread-1Dp-OI {
-    color: #272a2a;
-    background: #272a2a;
-    background-color: #272a2a;
+    color: var(--background);
+    background: var(--background);
+    background-color: var(--background);
 }
