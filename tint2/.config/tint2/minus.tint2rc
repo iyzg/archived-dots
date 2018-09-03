@@ -148,7 +148,7 @@ systray_sort = ascending
 systray_icon_size = 24
 systray_icon_asb = 100 0 0
 systray_monitor = 1
-systray_name_filter = discord
+systray_name_filter = discord, steam
 
 #-------------------------------------
 # Launcher

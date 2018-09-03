@@ -4,7 +4,7 @@
     --background: #272a2a;
     --red: #b05f5f;
     --foreground: #eaeaed;
-    --cayn: #558888;
+    --cyan: #558888;
 }
 /* Channel List Section */
 .scroller-2wx7Hm {
@@ -257,4 +257,80 @@
     color: var(--background);
     background: var(--background);
     background-color: var(--background);
+}
+
+/* TBD */
+.tooltip.tooltip-black {
+    background-color: var(--background);
+}
+
+/* Emoji Picker Section */
+.emojiPicker-3m1S-j {
+    background-color: var(--background);
+    border: none;
+    margin: none;
+
+}
+
+.emojiPicker-3m1S-j .header-1nkwgG {
+    border-bottom: none;
+}
+.emojiPicker-3m1S-j .header-1nkwgG .search-bar {
+    background-color: var(--background);
+    border-bottom: none;
+}
+
+.emojiPicker-3m1S-j .category-2U57w6 {
+    background-color: var(--background);
+}
+
+.search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
+    color: #eaeaed;
+}
+
+.search-bar.search-bar-light .search-bar-inner {
+    background-color: var(--background);
+    border: none;
+}
+
+.emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected-39BZ4S {
+    border-bottom-color: var(--background);
+}
+
+/* Discord Icon */
+.theme-dark .homeIcon-1FoKUJ {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Activity Header */
+.theme-dark .headerBar-UHpsPw {
+    box-shadow: none;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Games + Friends Tab */
+.theme-dark .header-1RC2Wb {
+    background-color: var(--background);
+}
+
+.theme-dark .body-SKIE6r {
+    background-color: var(--background);
+}
+
+.theme-dark .card-7JP0BX {
+    color: var(--foreground);
+    background-color: var(--background);
+    margin: none;
+    border: none;
+}
+
+.theme-dark .headerText-2niCs_ {
+    border-top-color: var(--background);
+    color: var(--foreground);
+}
+
+.theme-dark .player-1kJMbj {
+    border-bottom-color: var(--background);
 }
