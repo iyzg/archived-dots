@@ -233,3 +233,21 @@
     background-color: #272a2a;
 }
 
+/* Discord Icon Seperator */
+.theme-dark .guildSeparator-1X4GQ1:after {
+    background: #272a2a;
+}
+
+/* Server Add Button */
+.theme-dark .guildsAdd-21_IdK {
+    background: #272a2a;
+    border-color: #272a2a;
+    color: #eaeaed;
+}
+
+/* Unread Popout */
+.unread-1Dp-OI {
+    color: #272a2a;
+    background: #272a2a;
+    background-color: #272a2a;
+}
