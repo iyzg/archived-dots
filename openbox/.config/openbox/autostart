@@ -20,6 +20,9 @@ clipit &
 # Compositor
 compton &
 
+# Battery Icon
+cbatticon &
+
 # Music
 mpd &
 

@@ -1,0 +1,226 @@
+/* Aurora's Theme: Slate */
+/* Channel List Section */
+.scroller-2wx7Hm {
+    background-color: #272a2a;
+}
+
+/* Guild Messages Section */
+.scroller-wrap .scroller {
+    background-color: #272a2a;
+}
+
+/* Memeber List Section */
+.theme-dark .members-1998pB {
+    background-color: #272a2a;
+}
+
+/* Profile + Voice Settings Section */
+.theme-dark .container-2Thooq, 
+.theme-light .container-2Thooq {
+    background-color: #272a2a;
+}
+
+/* Server Name Header */
+.header-2o-2hj, 
+.header-2o-2hj:hover {
+    background-color: #272a2a;  
+    box-shadow: none;
+}
+
+/* Channel Name Header + Channel Desc. */
+.theme-dark .title-3qD0b- {
+    background-color: #272a2a;
+    box-shadow: none;
+}
+
+/* Server Messages */
+.theme-dark .markup-2BOw-j {
+    color: #eaeaed;
+}
+
+/* Read Channels */
+.nameDefaultText-24KCy5, 
+.nameDefaultVoice-3WUH7s, 
+.nameLockedText-3pqQcL, 
+.nameLockedVoice-26MhB1 {
+    color: #eaeaed;
+}
+
+/* Unread Channels */
+.nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI {
+    color: #b05f5f;
+}
+
+/* Text Box Section */
+.theme-dark .channelTextArea-rNsIhG {
+    background-color: #272a2a;
+    border-top: none;
+}
+
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: #272a2a;
+}
+
+.theme-dark .textArea-2Spzkt {
+    background-color: #272a2a;
+    color: #eaeaed;
+    margin: none;
+}
+
+.textArea-2Spzkt {
+    margin: none;
+    margin-color: #272a2a;
+}
+
+/* User Is Typing... Section */
+.theme-dark .typing-2GQL18 {
+    background-color: #272a2a;
+}
+
+/* User/Channel Mention */
+.theme-dark .wrapperHover-1GktnT {
+    color: #558888;
+}
+
+/* Is Mentioned Section */
+.isMentionedCozy-3isp7y:after {
+    border-left: none;
+    background: #272a2a;
+    background-color: #272a2a;
+}
+
+/* Message Divider */
+.theme-dark .dividerEnabled-2TTlcf {
+    border: none;
+    border-bottom: none;
+}
+
+/* Default Username */
+.theme-dark .username-_4ZSMR {
+    color: #eaeaed;
+}
+
+/* Member List Button Active */
+.iconActive-AKd_jq {
+    color: #f6f7f8;
+}
+
+/* Member List Role Dividers */
+.theme-dark .membersGroup-v9BXpm {
+    color: #eaeaed;
+}
+
+/* Attach Button */
+.attachButton-1UjEWA {
+    background-color: #272a2a;
+}
+
+/* DM List */
+.scroller-2FKFPG {
+    background-color: #272a2a;
+}
+
+/* DM Search Bar */
+.private-channels .search-bar {
+    background-color: #272a2a;
+    box-shadow: none;
+}
+
+.private-channels .search-bar .search-bar-inner input {
+    background-color: #272a2a;
+    color: #eaeaed;
+}
+
+.search-bar .search-bar-inner {
+    background: #272a2a;
+    background-color: #272a2a;
+    border: none;
+    border-radius: none;
+}
+
+/* Delete Prompt Section */
+.footer-2yfCgX, .header-1R_AjF {
+    background-color: #272a2a;
+}
+
+.theme-dark .footer-2yfCgX {
+    background-color: #272a2a;
+    box-shadow: none;
+}
+
+/* Delete Button */
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    background-color: #b05f5f;
+    color: #eaeaed;
+}
+
+/* New Messages */
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>span {
+    background-color: #272a2a;
+    color: #b05f5f;
+}
+
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>div {
+    background: #b05f5f;
+}
+
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 4px !important;
+    position: fixed !important;
+}
+
+::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track {
+    background: transparent !important;
+    border: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-radius: 2px !important;
+    background-color: #272a2a !important;
+}
+
+/* Is Mentioned Bar */
+.theme-dark .isMentioned-N-h9aa {
+    background-color: #272a2a;
+}
+
+/* Code Blocks */
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {
+    background-color: #272a2a;
+    border: none;
+}
+
+.theme-dark .hljs {
+    background-color: #272a2a;
+    border: none;
+}
+
+/* Links */
+.theme-dark .embedInner-1-fpTo {
+    background-color: #272a2a;
+    border: none;
+    border-radius: none;
+}
+
+.theme-dark .embedPill-1Zntps {
+    background-color: #272a2a;
+}
+
+.theme-dark .markup-2BOw-j a {
+    color: #558888;
+}
+
+.theme-dark .embedTitleLink-1Zla9e {
+    color: #558888;
+}
+
+/* Embed Title */
+.theme-dark .embedAuthorName-3mnTWj, .theme-dark .embedFieldName-NFrena, .theme-dark .embedTitle-3OXDkz {
+    color: #eaeaed!important;
+}
+
+
