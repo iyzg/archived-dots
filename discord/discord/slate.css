@@ -334,3 +334,20 @@
 .theme-dark .player-1kJMbj {
     border-bottom-color: var(--background);
 }
+
+/* Online, Offline, DND, & Invisible Dots */
+.dnd-1_xrcq {
+    background-color: #b05f5f;
+}
+
+.online-2S838R {
+    background-color: #88aa55;
+}
+
+.idle-3DEnRT {
+    background-color: #ccb05f;
+}
+
+.invisible-1kp8Z0, .offline-3qoTek, .unknown-Ms2zdV {
+    background-color: #c0c0c2;
+}
