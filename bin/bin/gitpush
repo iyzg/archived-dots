@@ -17,6 +17,7 @@ read -e COMMENT
 TIME=$(date +"%a %d")
 git commit -m "${TIME}: $COMMENT"
 
-# Push the local files to github
+# Push the local files and tags to github
+git push origin --tags
 git push -u origin master
 echo -e "\e[35mDone!\e[0m"
