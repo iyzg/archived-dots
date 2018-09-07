@@ -16,6 +16,12 @@ Linux has become one of my favorite pastimes and is a passion I'll continue to f
 These dotfiles are to save **my setups.** Be warned, they probably won't work on your system without a bit of tinkering around.
 I recommend just cherry picking what you need instead of copying my exact setup. 
 
+## Dotfile Manager
+Sponsored Message: I use my newly created dotfile manager, [Sequestrum](https://github.com/iiPlasma/sequestrum) to manage my
+dotfiles. It's made specifically for managing dotfiles instead of something more general like Stow. It's got advanced features
+like a universal config, one step complete install, automated command running, and makes your dotfiles a lot prettier than one
+that use Stow! 
+
 ## Overview
 - Window Manager: `openbox`
 - Bar: `tint2`
