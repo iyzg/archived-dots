@@ -1,10 +1,9 @@
-" Plugins
+" Plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'tpope/vim-surround'
-Plug 'iiPlasma/genus'
-Plug 'godlygeek/tabular'
 Plug 'w0rp/ale'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
 Plug 'Yggdroot/indentLine'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
@@ -13,38 +12,48 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf'
 Plug 'airblade/vim-gitgutter'
+Plug 'noahfrederick/vim-noctu'
 
 call plug#end()
+"}}}
 
-" Plugin Settings
-" NERDTree
+" Plugin Settings {{{
+" NERDTree {{{
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" }}}
 
-" NERDCommenter
+" NERDCommenter {{{
 filetype plugin on
 
 let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
+" }}}
 
-" IndentLine
+" IndentLine {{{
 let g:indentLine_char = '┆'
+" }}}
 
-" Colorscheme
-colorscheme nord
+" Colorscheme {{{
+colorscheme noctu
+" }}}
 
 " Settings
+set noshowmode
+set nowrap
 set number
 
 " Tab Settings
-set tabstop=8
-set softtabstop=8
+set tabstop=4
+set softtabstop=4
 set expandtab
 set shiftwidth=4
 set smarttab
 
-" Swap Files
+" Swap Files 
 set noswapfile
+set nobackup
+set nowritebackup
 
 " Statusline
 let g:currentmode={
@@ -98,4 +107,3 @@ function! StatuslineGit()
 	let l:branchname = GitBranch()
 	return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
-

@@ -356,3 +356,8 @@
 .invisible-1kp8Z0, .offline-3qoTek, .unknown-Ms2zdV {
     background-color: #c0c0c2;
 }
+
+.autocompleteInner-zh20B_ {
+    background-color: var(--background);
+    color: var(--foreground);
+}
