@@ -357,7 +357,22 @@
     background-color: #c0c0c2;
 }
 
+/* Autocomplete Menu */
 .autocompleteInner-zh20B_ {
     background-color: var(--background);
     color: var(--foreground);
 }
+
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: var(--cyan);
+}
+
+.theme-dark .description-11DmNu, .theme-dark .descriptionUsername-J_75O8 {
+    color: var(--foreground);
+}
+
+.theme-dark .content-Qb0rXO {
+    color: var(--foreground);
+}
+
+
