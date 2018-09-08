@@ -85,6 +85,10 @@
     color: var(--foreground);
 }
 
+.theme-dark .typing-2GQL18 span {
+    color: var(--foreground);
+}
+
 /* User/Channel Mention */
 .theme-dark .wrapperHover-1GktnT {
     color: var(--cyan);
