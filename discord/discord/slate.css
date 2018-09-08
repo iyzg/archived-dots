@@ -378,3 +378,8 @@
 .theme-dark .descriptionDiscriminator-3vUOCc {
     color: var(--foreground);
 }
+
+/* Pinged Notification */
+.wrapper-232cHJ {
+    background-color: var(--red);
+}
