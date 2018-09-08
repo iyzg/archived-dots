@@ -20,7 +20,7 @@ I recommend just cherry picking what you need instead of copying my exact setup.
 Sponsored Message: I use my newly created dotfile manager, [Sequestrum](https://github.com/iiPlasma/sequestrum) to manage my
 dotfiles. It's made specifically for managing dotfiles instead of something more general like Stow. It's got advanced features
 like a universal config, one step complete install, automated command running, and makes your dotfiles a lot prettier than one
-that use Stow! 
+that use Stow! If you'd like, you can go check it out and use it. 
 
 ## Overview
 - Window Manager: `openbox`
