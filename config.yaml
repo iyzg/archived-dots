@@ -1,0 +1,73 @@
+options:
+    base: &base
+        dotfileDirectory: dotfiles
+  
+    binPackage:
+        directoryName: bin
+        links:
+            - bin: bin
+
+    comptonPackage:
+        directoryName: compton
+        links:
+            - config: .config/compton.conf
+
+    discordPackage:
+        directoryName: discord
+        links:
+            - discord: discord
+
+    dunstPackage:
+        directoryName: dunst
+        links:
+            - dunstrc: .config/dunst/dunstrc
+    
+
+    mpdPackage:
+        directoryName: mpd
+        links:
+            - config: .mpd/mpd.conf
+
+    ncmpcppPackage:
+        directoryName: ncmpcpp
+        links:
+            - config-minimal: .ncmpcpp/config
+
+    neovimPackage:
+        directoryName: neovim
+        links:
+            - init: .config/nvim/init.vim
+
+    obthemesPackage:
+        directoryName: obthemes
+        links:
+            - circulus: .themes/Circulus
+
+    openboxPackage:
+        directoryName: openbox
+        links:
+            - autostart: .config/openbox/autostart
+            - menu: .config/openbox/menu.xml
+            - rc: .config/openbox/rc.xml
+
+    tint2Package:
+        directoryName: tint2
+        links:
+            - minus: .config/tint2/minus.tint2rc
+
+    urxvtPackage:
+        directoryName: urxvt
+        links:
+            - xresources: .Xresources
+            - xrdb: .xrdb
+
+    wallpaperPackage:
+        directoryName: wallpaper
+        links:
+            - wallpapers: wallpaper
+
+    zshPackage:
+        directoryName: zsh
+        links:
+            - zshrc: .zshrc
+            - zsh-theme: .oh-my-zsh/themes/clair.zsh-theme

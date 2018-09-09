@@ -133,6 +133,12 @@
         <to>4</to>
       </action>
     </keybind>
+    <!-- Utilities -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>/home/plasma/bin/screeny</command>
+      </action>
+    </keybind>
     <!-- Audio -->
     <keybind key="XF86AudioStop">
       <action name="Execute">
