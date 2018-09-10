@@ -76,9 +76,9 @@ let g:currentmode={
 			\ 'r?' : 'CONFIRM ',
 			\ '!'  : 'SHELL ',
 			\ 't'  : 'TERMINAL '}
-hi PrimaryBlock   ctermfg =00 ctermbg=02
-hi SecondaryBlock ctermfg =00 ctermbg=02
-hi Blanks         ctermfg =00 ctermbg=02
+hi PrimaryBlock   ctermfg =00 ctermbg=06
+hi SecondaryBlock ctermfg =00 ctermbg=06
+hi Blanks         ctermfg =00 ctermbg=06
 
 highlight EndOfBuffer ctermfg=black ctermbg=black
 

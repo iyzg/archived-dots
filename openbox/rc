@@ -23,7 +23,7 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Circulus</name>
+    <name>Tricky</name>
     <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
@@ -547,4 +547,9 @@
     <top>0</top>
     <bottom>0</bottom>
   </margins>
+  <applications>
+    <application name="feh" class="feh">
+      <decor>no</decor>
+    </application>
+  </applications>
 </openbox_config>

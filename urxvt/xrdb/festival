@@ -1,0 +1,24 @@
+! -- Title:     festival
+! -- Author:    plasma
+! -- Created:   2018
+! -- Modified:  2018
+
+
+#define bg      #15181e
+#define fg      #ced6e0
+#define blk     #2f3542
+#define bblk    #2f3542
+#define red     #b2403c
+#define bred    #b2403c
+#define grn     #1d7c4b
+#define bgrn    #1d7c4b
+#define ylw     #f2c548
+#define bylw    #f2c548
+#define blu     #52afa4
+#define bblu    #52afa4
+#define mag     #525faf
+#define bmag    #525faf
+#define cyn     #068b76
+#define bcyn    #068b76
+#define wht     #ced6e0
+#define bwht    #dfe4ea

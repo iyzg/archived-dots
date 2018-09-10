@@ -22,6 +22,10 @@ options:
         links:
             - dunstrc: .config/dunst/dunstrc
     
+    gtkPackage:
+        directoryName: gtk
+        links:
+            - genus: .themes/Genus
 
     mpdPackage:
         directoryName: mpd
