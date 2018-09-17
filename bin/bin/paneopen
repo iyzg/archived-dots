@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# BAnimate: Phase sidepanel in and out
+
+i=1
+pi=$(echo "scale=5; 4*a(1)" | bc -l)
+
+echo $pi
+for i in {1..100}; do
+    int=$(bc <<<"scale=2; $i / 100" )
+    xposition=$(echo "0 - (s($int * $pi / 2) * 450)" | bc -l)
+    xdotool windowmove 0x1600001 ${xposition} 0
+    sleep 0.006
+	let "i++"
+done

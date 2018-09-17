@@ -139,6 +139,26 @@
         <command>/home/plasma/bin/screeny</command>
       </action>
     </keybind>
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>/home/plasma/bin/record</command>
+      </action>
+    </keybind>
+    <keybind key="W-o">
+      <action name="Execute">
+        <command>/home/plasma/bin/paneopen</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>/home/plasma/bin/paneclose</command>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>/home/plasma/bin/stoprec</command>
+      </action>
+    </keybind>
     <!-- Audio -->
     <keybind key="XF86AudioStop">
       <action name="Execute">

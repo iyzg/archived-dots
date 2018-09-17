@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# A simple script to display battery percent
+# Taken from Anachron i3blocks
+# I only slightly modify this script to add an option to show icon
+# I also remove the i3blocks specify script
+# To make this works with tint2 executor, polybar custom script, dzen2 feeder, conkybar, lemonbar feeder, dunst notify, etc.
+# 'battery -i' = with icon, 'battery' = text only
+# Cheers!
+# Addy
+
+BATTERY=1
+BATTERY_INFO=$(acpi -b | grep "Battery ${BATTERY}")
+BATTERY_STATE=$(echo "${BATTERY_INFO}" | grep -wo "Full\|Charging\|Discharging")
+BATTERY_POWER=$(echo "${BATTERY_INFO}" | grep -o '[0-9]\+%' | tr -d '%')
+
+if [[ "${BATTERY_POWER}" = 100 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/100.png ~/.config/conky/tersus/assets/bat.png
+elif [[ "${BATTERY_POWER}" -ge 90 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/90.png ~/.config/conky/tersus/assets/bat.png
+elif [[ "${BATTERY_POWER}" -ge 80 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/80.png ~/.config/conky/tersus/assets/bat.png
+elif [[ "${BATTERY_POWER}" -ge 60 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/60.png ~/.config/conky/tersus/assets/bat.png
+elif [[ "${BATTERY_POWER}" -ge 50 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/50.png ~/.config/conky/tersus/assets/bat.png
+elif [[ "${BATTERY_POWER}" -ge 30 ]]; then
+    ln -sf ~/.config/conky/tersus/assets/battery/30.png ~/.config/conky/tersus/assets/bat.png
+else
+    ln -sf ~/.config/conky/tersus/assets/battery/20.png ~/.config/conky/tersus/assets/bat.png
+fi
+
+echo ${BATTERY_POWER}

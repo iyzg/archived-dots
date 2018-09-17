@@ -51,6 +51,7 @@ c1="${reset}${cyan}"			# second color
 ## OUTPUT
 
 cat <<EOF
+
 ${c0}        /\        ${nc}${USER}${ic}@${nc}${host}${reset}
 ${c0}       /^^\       ${lc}OS:        ${ic}${os}${reset}
 ${c0}      /\   \      ${lc}KERNEL:    ${ic}${kernel}${reset}
@@ -58,4 +59,6 @@ ${c0}     /  ${c1}__  \     ${lc}UPTIME:    ${ic}${uptime}${reset}
 ${c1}    /  (  )  \    ${lc}PACKAGES:  ${ic}${packages}${reset}
 ${c1}   / __|  |__\\\\   ${lc}SHELL:     ${ic}${shell}${reset}
 ${c1}  ///        \\\\\  ${lc}${envtype}:        ${ic}${WM}${reset}
+
 EOF
+

@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# Weather- Grab the weather! 
+
+# Open Weather Map API code, register to http://openweathermap.org to get one ;)
+API_KEY="51a815329a271c44a15f919045dfc745"
+
+# Check on http://openweathermap.org/find
+CITY_ID="5193342"
+
+ICON_SUNNY="  Clear"
+ICON_CLOUDY="  Cloudy"
+ICON_RAINY="  Rainy"
+ICON_STORM="  Storm"
+ICON_SNOW="  Snow"
+ICON_FOG="  Fog"
+ICON_MISC=" "
+
+TEXT_SUNNY="Clear"
+TEXT_CLOUDY="Cloudy"
+TEXT_RAINY="Rainy"
+TEXT_STORM="Storm"
+TEXT_SNOW="Snow"
+TEXT_FOG="Fog"
+
+SYMBOL_CELSIUS="˚C"
+
+WEATHER_URL="http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=metric"
+
+WEATHER_INFO=$(wget -qO- "${WEATHER_URL}")
+WEATHER_MAIN=$(echo "${WEATHER_INFO}" | grep -o -e '\"main\":\"[a-Z]*\"' | awk -F ':' '{print $2}' | tr -d '"')
+WEATHER_TEMP=$(echo "${WEATHER_INFO}" | grep -o -e '\"temp\":\-\?[0-9]*' | awk -F ':' '{print $2}' | tr -d '"')
+
+if [[ "${WEATHER_MAIN}" = *Snow* ]]; then
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_SNOW} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "If You go outside, don't forget to bring your jacket"
+	else
+    ln -sf ~/Icons/MaterialWeather/Snow.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${TEXT_SNOW} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi
+elif [[ "${WEATHER_MAIN}" = *Rain* ]] || [[ "${WEATHER_MAIN}" = *Drizzle* ]]; then
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_RAINY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "If You go outside, don't forget to bring your umbrella"
+	else
+    ln -sf ~/Icons/MaterialWeather/Rain.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${TEXT_RAINY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi
+elif [[ "${WEATHER_MAIN}" = *Cloud* ]]; then
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_CLOUDY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "A perfect weather to play outside"
+	else
+    ln -sf ~/Icons/MaterialWeather/Cloudy.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${TEXT_CLOUDY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi
+elif [[ "${WEATHER_MAIN}" = *Clear* ]]; then
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_SUNNY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "If You go outside, don't forget to bring your hat"
+	else
+    ln -sf ~/Icons/MaterialWeather/Clear-Day.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${TEXT_SUNNY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi
+elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_FOG} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "If You want to go, don't forget to check your headlamp"
+	else
+    ln -sf ~/Icons/MaterialWeather/Haze.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${TEXT_FOG} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi
+else
+	if  [[ $1 = "-i" ]]; then
+    echo "${ICON_MISC} ${WEATHER_MAIN} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+    elif  [[ $1 = "-t" ]]; then
+    echo "The Weather is unknown"
+	else
+    ln -sf ~/Icons/MaterialWeather/Error.png /home/plasma/.config/conky/tersus/assets/icon.png
+    echo "${WEATHER_MAIN} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+	fi	
+fi

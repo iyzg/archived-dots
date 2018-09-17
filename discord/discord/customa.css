@@ -1,0 +1,16 @@
+@import url('https://raw.githack.com/Customa/Customa/master/Base/base.m.css');
+@import url('https://raw.githack.com/Customa/Customa/master/Base/font.m.css');
+@import url('https://raw.githack.com/Customa/Customa/master/Chat/guildsWrapper.m.css');
+
+:root{
+    
+    --ColAppBG: #2c2a2b; /* Color or url('link to image')*/
+    --ColBackground1: #2c2a2b; /* Color */
+    --ColBackground2: #2c2a2b; /* Color */
+    --ColAccent: #4DB6AC; /* Color */
+    --ColAccentAlpha: rgba(77, 182, 172, 0.1); /* Color in RGBA Format, best when hex code of --ColAccent is converted to rgba and get's an opacity of 0.1 */
+    --ColAnchor: #0096cf;  /* Color */
+    --ColLastMessage: transparent; /* Transparent or Color - pref. RGBA color */
+    --DisplayEmbedPill: none; /* Block or none */
+
+}

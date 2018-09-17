@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# MPCFetch - Grab Artist & Song
+
+artist="`mpc --format \"[%artist%]\" | head -n 1`"
+title="`mpc --format \"[%title%]\" | head -n 1`"
+
+echo "$artist - $title"
+

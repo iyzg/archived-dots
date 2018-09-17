@@ -35,7 +35,8 @@ options:
     ncmpcppPackage:
         directoryName: ncmpcpp
         links:
-            - config-minimal: .ncmpcpp/config
+            - config-aurora: .ncmpcpp/config-aurora
+            - config-griseo: .ncmpcpp/config-griseo
 
     neovimPackage:
         directoryName: neovim

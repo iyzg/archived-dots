@@ -1,4 +1,3 @@
-
 #        ___           ___           ___           ___                     ___           ___     
 #       /  /\         /  /\         /__/\         /  /\        ___        /  /\         /__/\    
 #      /  /:/        /  /::\       |  |::\       /  /::\      /  /\      /  /::\        \  \:\   
@@ -115,3 +114,10 @@ glx-swap-method = "undefined";
 # glx-use-gpushader4 = true;
 # xrender-sync = true;
 # xrender-sync-fence = true;
+
+# Window type settings
+wintypes:
+{
+  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
+};
+

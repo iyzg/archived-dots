@@ -1,6 +1,9 @@
 # Autostart
 # Background
-feh --bg-fill ~/wallpaper/bridgeTwoEdited.jpg
+feh --bg-scale ~/wallpaper/waterfallOneEdited.jpg
+
+# Internet
+sudo NetworkManager 
 
 # Xresources
 xrdb -merge .Xresources &
@@ -15,7 +18,7 @@ volumeicon &
 clipit &
 
 # Notifications
-#dunst &
+dunst &
 
 # Compositor
 compton &
@@ -26,6 +29,11 @@ cbatticon &
 # Music
 mpd &
 
+# Delay
+sleep 10
 
-# Bar
-tint2 -c ~/.config/tint2/minus.tint2rc &
+# Conky
+conky -c ~/.config/conky/tersus/tersus.conkyrc
+
+# Icons
+iconupdate

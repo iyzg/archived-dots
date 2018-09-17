@@ -3,4 +3,4 @@
 # Command to stop screenrecording
 # I usually launch this using rofi
 
-killall -9 ffmpeg
+killall ffmpeg

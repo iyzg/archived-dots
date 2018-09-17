@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+# Upload: Send files to 0x0.st
+
+placeholder=$1
+curl -F"file=@$placeholder" http://0x0.st

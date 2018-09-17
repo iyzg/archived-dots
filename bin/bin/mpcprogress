@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+# MPCProgress- Percent of the song played
+
+time=$(mpc | grep 'playing' | awk '{print $3}')
+playtime=${time%/*}
+totltime=${time#*/}
+
+playtime_sec=$((10#${playtime%:*}*60+${playtime#*:}))
+totltime_sec=$((10#${totltime%:*}*60+${totltime#*:}))
+
+song_percent=$(echo "($playtime_sec / $totltime_sec) * 100" | bc -l)
+song_percent=${song_percent%.*}
+echo $song_percent
