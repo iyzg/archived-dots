@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+# Notes: Note Management
+
+usage() {
+cat << EOF
+
+
+USAGE:
+        
+    notes [year|"all"] (class)
+    
+EXAMPLES:
+    
+    notes 
+        - Compiles notes for this year and all classes
+
+    notes all
+        - Compiles all notes
+
+    notes 10
+        - Compiles notes for 10th year
+
+    notes 1 APComputerScience
+        - Compiles notes for Year 1, AP Comp. Sci
+
+
+EOF
+}
+
+

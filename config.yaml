@@ -12,6 +12,10 @@ options:
         links:
             - config: .config/compton.conf
 
+    conkyPackage:
+        directoryName: conky
+        links:
+            - tersus: .config/conky/tersus
     discordPackage:
         directoryName: discord
         links:
@@ -22,11 +26,6 @@ options:
         links:
             - dunstrc: .config/dunst/dunstrc
     
-    gtkPackage:
-        directoryName: gtk
-        links:
-            - genus: .themes/Genus
-
     mpdPackage:
         directoryName: mpd
         links:
@@ -47,6 +46,7 @@ options:
         directoryName: obthemes
         links:
             - circulus: .themes/Circulus
+            - tricky: .themes/Tricky
 
     openboxPackage:
         directoryName: openbox

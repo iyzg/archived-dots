@@ -1,6 +1,7 @@
 " Plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'SirVer/ultisnips'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
