@@ -1,18 +1,3 @@
---[[
-#=====================================================================================
-#                               
-# Date    : 13/03/2017
-# name    : Sidepanes
-# Author  : Adhi Pambudi
-#           https://plus.google.com/+AdhiPambudi
-#           https://addy-dclxvi.deviantart.com
-#			https://github.com/addy-dclxvi
-# Version : v0.01
-# License : Distributed under the terms of GNU GPL version 2 or later,
-# Except the icons (extracted from Min icon pack)
-#=====================================================================================
-]]
-
 conky.config = {
 --##  Begin Window Settings  #####################
 own_window = true,
