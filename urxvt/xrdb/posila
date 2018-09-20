@@ -1,0 +1,24 @@
+! -- Title:     posila
+! -- Author:    plasma
+! -- Created:   2018
+! -- Modified:  ???
+
+
+#define bg      #2B303B
+#define fg      #c5c8c6
+#define blk     #373b41
+#define bblk    #373b41
+#define red     #BF616A
+#define bred    #BF616A
+#define grn     #A3BE8C
+#define bgrn    #A3BE8C
+#define ylw     #EBCB8B
+#define bylw    #EBCB8B
+#define blu     #96B5B4
+#define bblu    #96B5B4
+#define mag     #B48EAD
+#define bmag    #B48EAD
+#define cyn     #96B5A6
+#define bcyn    #96B5A6
+#define wht     #cfcfc4
+#define bwht    #cfcfc4

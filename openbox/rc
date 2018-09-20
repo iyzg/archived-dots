@@ -23,7 +23,8 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Tricky</name>
+    <name>Whitey</name>
+    <cornerRadius>8</cornerRadius>
     <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>

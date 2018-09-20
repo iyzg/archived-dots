@@ -1,6 +1,6 @@
 # Autostart
 # Background
-feh --bg-scale ~/wallpaper/waterfallOneEdited.jpg
+feh --bg-scale ~/wallpaper/cherryBlossomsOne.jpg
 
 # Internet
 sudo NetworkManager 
@@ -11,8 +11,8 @@ xrdb -merge .Xresources &
 # Wifi
 nm-applet &
 
-# Volume
-volumeicon &
+# Shadows
+compton &
 
 # Clipboard
 clipit &
@@ -20,20 +20,8 @@ clipit &
 # Notifications
 dunst &
 
-# Compositor
-compton &
-
-# Battery Icon
-cbatticon &
-
 # Music
 mpd &
 
-# Delay
-sleep 10
-
-# Conky
-conky -c ~/.config/conky/tersus/tersus.conkyrc
-
-# Icons
-iconupdate
+# Bar
+conky -c ~/.config/conky/welcome/sidekick.conkyrc &

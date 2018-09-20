@@ -1,6 +1,3 @@
-#!/bin/bash
-
-# Command to stop screenrecording
-# I usually launch this using rofi
+#!/usr/bin/env bash
 
 killall ffmpeg

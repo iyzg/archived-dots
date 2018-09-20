@@ -1,4 +1,4 @@
-#include "/home/plasma/.xrdb/blok"
+#include </home/plasma/.xrdb/lux>
 
 ! Colors  
 *background:   bg  
@@ -22,7 +22,7 @@
 
 ! Settings
 URxvt.scrollBar:       false
-URxvt.internalBorder:  25
+URxvt.internalBorder:  50
 URxvt.letterSpace:     0
 URxvt.lineSpace:       0
 
@@ -35,5 +35,3 @@ Xft.dpi: 96
 
 ! Font
 URxvt.font: xft:RobotoMono Nerd Font:size=9
-
-

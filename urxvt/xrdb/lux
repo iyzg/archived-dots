@@ -1,0 +1,22 @@
+! -- Title:     blok 
+! -- Author:    dkeg
+! -- Created:   2015
+
+#define bg    #f6f6f6
+#define fg    #373b41
+#define blk   #41454c
+#define bblk  #41454c
+#define red   #ef978b
+#define grn   #95d1a9
+#define ylw   #f7ca88
+#define blu   #72a7cf 
+#define mag   #c9a0ca
+#define cyn   #71cecd
+#define wht   #63666c
+#define bred  #ef978b
+#define bgrn  #95d1a9
+#define bylw  #f7ca88
+#define bblu  #72a7cf
+#define bmag  #c9a0ca
+#define bcyn  #71cecd
+#define bwht #63666c

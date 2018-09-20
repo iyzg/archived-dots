@@ -2,6 +2,11 @@
 #
 # Notes: Note Management
 
+set -e
+
+classes=()
+years=()
+
 usage() {
 cat << EOF
 
@@ -28,4 +33,65 @@ EXAMPLES:
 EOF
 }
 
+pullclassnames() {
+    for file in ~/Notes/"$1"/*; do
+        if [[ -d $file ]]; then
+            classes+=("$file")
+        fi
+    done
+}
 
+pullyearnames() {
+    for file in ~/Notes/*; do
+        if [[ -d $file ]]; then
+            years+=("$file")
+        fi
+    done
+}
+
+# TODO: Add check year so that you make sure year numbesr are valid 
+main() {
+    case "$1" in
+        "all")
+            echo "[Notes] Compiling All Notes"
+            makenotes "*" "*"
+            echo "[Notes] Finished Compiling All Notes"
+            exit 0
+            ;;
+        '')
+            echo "[Notes] Compiling Year ${YEAR} Notes"
+            makenotes "${YEAR}" "*"
+            echo "[Notes] Finished Compiling Year ${YEAR}"
+            exit 0
+            ;;
+        [0-9]*)
+            if [[ "$2" == '' ]]; then
+                echo "[Notes] Compiling Year $1 Notes"
+                makenotes "$1" "*"
+                echo "[Notes] Finished Compiling Year $1"
+            else
+                pullclassnames "$1"
+                found=false
+                for class in "${arr[@]}"; do
+                    if [[ "$class" == "$2" ]]; then
+                        found=true
+                        break
+                    fi
+                done
+                if [[ "$found" = false ]]; then
+                    echo "[Notes] Invalid Class Name For Year $1"
+                    exit 1
+                fi
+                makenotes "$1" "$2"
+                echo "[Notes] Finished Compiling Year $1 - $2"
+                exit 0
+            fi
+            ;;
+        *)
+            usage
+            exit 1
+            ;;
+    esac
+}
+
+main "$1" "$2"

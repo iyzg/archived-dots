@@ -1,0 +1,24 @@
+! -- Title:     nord
+! -- Author:    arcticstudios
+! -- Created:   2015
+! -- Modified:  2018
+
+
+#define bg      #2f343f
+#define fg      #d8dee8
+#define blk     #4b5262
+#define bblk    #4b5262
+#define red     #bf616a
+#define bred    #bf616a
+#define grn     #a3be8c
+#define bgrn    #a3be8c
+#define ylw     #ebcb8b
+#define bylw    #ebcb8b
+#define blu     #81a1c1
+#define bblu    #81a1c1
+#define mag     #b48ead
+#define bmag    #b48ead
+#define cyn     #89d0ba
+#define bcyn    #89d0ba
+#define wht     #e5e9f0
+#define bwht    #e5e9f0
