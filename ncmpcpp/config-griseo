@@ -527,9 +527,9 @@ color1 = white
 #
 color2 = green
 #
-progressbar_color = black:b
+progressbar_color = white:b
 #
-progressbar_elapsed_color = white:b
+progressbar_elapsed_color = magenta:b
 #
 statusbar_color = default
 #

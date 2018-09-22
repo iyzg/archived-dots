@@ -31,7 +31,7 @@ notify-send -t 2000 "recording started"
 
 ffmpeg -y -f x11grab -draw_mouse 0 -s ${3}x${4} \
     -r 30 -i :0.0+${1},${2} -qscale 0 \
-    -vcodec libx264 -preset veryfast \
+    -vcodec libx264 -preset veryfast -pix_fmt yuv420p \
     -tune zerolatency -vsync 0 -y -loglevel 0 \
     "$HOME/Videos/$(date '+%Y-%B-%d.%H:%M:%S')".mp4 \
     > /dev/null 2>&1

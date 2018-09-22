@@ -1,6 +1,6 @@
 # Autostart
 # Background
-feh --bg-scale ~/wallpaper/cherryBlossomsOne.jpg
+feh --bg-scale ~/wallpaper/cherryBlossomsOneEdited.jpg
 
 # Internet
 sudo NetworkManager 

@@ -1,8 +1,8 @@
 " Plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'dylanaraps/wal.vim'
 Plug 'iiPlasma/accommodare'
-" Plug 'SirVer/ultisnips'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
@@ -37,7 +37,7 @@ let g:indentLine_char = '┆'
 " }}}
 
 " Colorscheme {{{
-colorscheme accommodare
+colorscheme wal
 " }}}
 
 " Settings

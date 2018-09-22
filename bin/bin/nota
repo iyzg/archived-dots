@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 #
-# Notes: Note Management
+# Nota: Note Management
 
 set -e
 
+YEAR=10
+
 classes=()
 years=()
+notes=()
 
 usage() {
 cat << EOF
@@ -13,43 +16,79 @@ cat << EOF
 
 USAGE:
         
-    notes [year|"all"] (class)
+    nota [year|"all"] (class)
     
 EXAMPLES:
     
-    notes 
+    nota 
         - Compiles notes for this year and all classes
 
-    notes all
+    nota all
         - Compiles all notes
 
-    notes 10
+    nota 10
         - Compiles notes for 10th year
 
-    notes 1 APComputerScience
+    nota 1 APComputerScience
         - Compiles notes for Year 1, AP Comp. Sci
 
 
 EOF
 }
 
-pullclassnames() {
-    for file in ~/Notes/"$1"/*; do
+getclassnames() {
+    for file in $HOME/Notes/"Year$1"/*; do
         if [[ -d $file ]]; then
             classes+=("$file")
         fi
     done
 }
 
-pullyearnames() {
-    for file in ~/Notes/*; do
+getyearnames() {
+    for file in $HOME/Notes/*; do
         if [[ -d $file ]]; then
             years+=("$file")
         fi
     done
 }
 
-# TODO: Add check year so that you make sure year numbesr are valid 
+getnotes() {
+    for file in $1; do
+        notes+=("$PWD/$file")
+    done   
+}
+
+makepdf() {
+    pandoc --pdf-engine=lualatex -H "$HOME/Notes/fonts.tex" --toc \
+        -o "$1.pdf" -f gfm "$HOME/Notes/about.md" "$2"
+    echo "Created $1.pdf"
+}
+
+makenotes() {
+    for year in $HOME/Notes/Year$1; do
+        for class in $year/Class$2; do
+            cd "$class"
+            getnotes "$class"
+            output_file="$class/"$(basename "$class")           
+            
+            makepdf "$output_file" "$notes"
+
+            unset notes output_file
+
+            cd - &>/dev/null
+        done
+
+        cd "$year"
+        echo "Compiling Year $year's PDF"
+        
+        gs -sDEVICE=pdfwrite \
+            -dQUIET \
+            -o "$(basename $year).pdf" \
+            Class*/*.pdf &&
+        echo "Created ${year}.pdf"
+    done
+}
+
 main() {
     case "$1" in
         "all")
@@ -70,7 +109,7 @@ main() {
                 makenotes "$1" "*"
                 echo "[Notes] Finished Compiling Year $1"
             else
-                pullclassnames "$1"
+                getclassnames "$1"
                 found=false
                 for class in "${arr[@]}"; do
                     if [[ "$class" == "$2" ]]; then
