@@ -1,5 +1,0 @@
-#!/bin/bash
-
-artist="`mpc --format \"[%artist%]\" | head -n 1`"
-
-echo "$artist"

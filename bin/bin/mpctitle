@@ -1,5 +1,0 @@
-#!/bin/bash
-
-title="`mpc --format \"[%title%]\" | head -n 1`"
-
-echo "$title"

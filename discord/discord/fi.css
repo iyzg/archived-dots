@@ -1,0 +1,385 @@
+/* Aurora's Theme: Slate */
+
+:root {
+    --background: #f6f6f6;
+    --red: #ef978b;
+    --foreground: #41454c;
+    --cyan: #72a7cf;
+}
+/* Channel List Section */
+.scroller-2wx7Hm {
+    background-color: var(--background);
+}
+
+/* Guild Messages Section */
+.scroller-wrap .scroller {
+    background-color: var(--background);
+}
+
+/* Memeber List Section */
+.theme-dark .members-1998pB {
+    background-color: var(--background);
+}
+
+/* Profile + Voice Settings Section */
+.theme-dark .container-2Thooq, 
+.theme-light .container-2Thooq {
+    background-color: var(--background);
+}
+
+/* Server Name Header */
+.header-2o-2hj, 
+.header-2o-2hj:hover {
+    background-color: var(--background);  
+    box-shadow: none;
+}
+
+/* Channel Name Header + Channel Desc. */
+.theme-dark .title-3qD0b- {
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+/* Server Messages */
+.theme-dark .markup-2BOw-j {
+    color: var(--foreground);
+}
+
+/* Read Channels */
+.nameDefaultText-24KCy5, 
+.nameDefaultVoice-3WUH7s, 
+.nameLockedText-3pqQcL, 
+.nameLockedVoice-26MhB1 {
+    color: var(--foreground);
+}
+
+/* Unread Channels */
+.nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI {
+    color: var(--red);
+}
+
+/* Text Box Section */
+.theme-dark .channelTextArea-rNsIhG {
+    background-color: var(--background);
+    border-top: none;
+}
+
+.theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 {
+    background-color: var(--background);
+}
+
+.theme-dark .textArea-2Spzkt {
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: none;
+}
+
+.textArea-2Spzkt {
+    margin: none;
+    margin-color: var(--background);
+}
+
+/* User Is Typing... Section */
+.theme-dark .typing-2GQL18 {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.theme-dark .typing-2GQL18 span {
+    color: var(--foreground);
+}
+
+/* User/Channel Mention */
+.theme-dark .wrapperHover-1GktnT {
+    color: var(--cyan);
+}
+
+/* Is Mentioned Section */
+.isMentionedCozy-3isp7y:after {
+    border-left: none;
+    background: var(--background);
+    background-color: var(--background);
+}
+
+/* Message Divider */
+.theme-dark .dividerEnabled-2TTlcf {
+    border: none;
+    border-bottom: none;
+}
+
+/* Default Username */
+.theme-dark .username-_4ZSMR {
+    color: var(--foreground);
+}
+
+/* Member List Button Active */
+.iconActive-AKd_jq {
+    color: #f6f7f8;
+}
+
+/* Member List Role Dividers */
+.theme-dark .membersGroup-v9BXpm {
+    color: var(--foreground);
+}
+
+/* Attach Button */
+.attachButton-1UjEWA {
+    background-color: var(--background);
+}
+
+/* DM List */
+.scroller-2FKFPG {
+    background-color: var(--background);
+}
+
+/* DM Search Bar */
+.private-channels .search-bar {
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+.private-channels .search-bar .search-bar-inner input {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.search-bar .search-bar-inner {
+    background: var(--background);
+    background-color: var(--background);
+    border: none;
+    border-radius: none;
+}
+
+/* Delete Prompt Section */
+.footer-2yfCgX, .header-1R_AjF {
+    background-color: var(--background);
+}
+
+.theme-dark .footer-2yfCgX {
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+/* Delete Button */
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    background-color: var(--red);
+    color: var(--foreground);
+}
+
+/* New Messages */
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>span {
+    background-color: var(--background);
+    color: var(--red);
+}
+
+.theme-dark .divider-3gKybi.dividerRed-MKoLlr>div {
+    background: var(--red);
+}
+
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 4px !important;
+    position: fixed !important;
+}
+
+::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track {
+    background: transparent !important;
+    border: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-radius: 2px !important;
+    background-color: var(--background) !important;
+}
+
+/* Is Mentioned Bar */
+.theme-dark .isMentioned-N-h9aa {
+    background-color: var(--background);
+}
+
+/* Code Blocks */
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {
+    background-color: var(--background);
+    border: none;
+}
+
+.theme-dark .hljs {
+    background-color: var(--background);
+    border: none;
+}
+
+/* Links */
+.theme-dark .embedInner-1-fpTo {
+    background-color: var(--background);
+    border: none;
+    border-radius: none;
+}
+
+.theme-dark .embedPill-1Zntps {
+    background-color: var(--background);
+}
+
+.theme-dark .markup-2BOw-j a {
+    color: var(--cyan);
+}
+
+.theme-dark .embedTitleLink-1Zla9e {
+    color: var(--cyan);
+}
+
+/* Embed Title */
+.theme-dark .embedAuthorName-3mnTWj, .theme-dark .embedFieldName-NFrena, .theme-dark .embedTitle-3OXDkz {
+    color: var(--foreground)!important;
+}
+
+/* Text Box */
+.theme-dark .inner-zqa7da {
+    background-color: var(--background);
+}
+
+/* Attach Button Seperator */
+.theme-dark .attachButtonDivider-3Glu60 {
+    background-color: var(--background);
+}
+
+/* Discord Icon Seperator */
+.theme-dark .guildSeparator-1X4GQ1:after {
+    background: var(--background);
+}
+
+/* Server Add Button */
+.theme-dark .guildsAdd-21_IdK {
+    background: var(--background);
+    border-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Unread Popout */
+.unread-1Dp-OI {
+    color: var(--background);
+    background: var(--background);
+    background-color: var(--background);
+}
+
+/* TBD */
+.tooltip.tooltip-black {
+    background-color: var(--background);
+}
+
+/* Emoji Picker Section */
+.emojiPicker-3m1S-j {
+    background-color: var(--background);
+    border: none;
+    margin: none;
+
+}
+
+.emojiPicker-3m1S-j .header-1nkwgG {
+    border-bottom: none;
+}
+.emojiPicker-3m1S-j .header-1nkwgG .search-bar {
+    background-color: var(--background);
+    border-bottom: none;
+}
+
+.emojiPicker-3m1S-j .category-2U57w6 {
+    background-color: var(--background);
+}
+
+.search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
+    color: #eaeaed;
+}
+
+.search-bar.search-bar-light .search-bar-inner {
+    background-color: var(--background);
+    border: none;
+}
+
+.emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected-39BZ4S {
+    border-bottom-color: var(--background);
+}
+
+/* Discord Icon */
+.theme-dark .homeIcon-1FoKUJ {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Activity Header */
+.theme-dark .headerBar-UHpsPw {
+    box-shadow: none;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Games + Friends Tab */
+.theme-dark .header-1RC2Wb {
+    background-color: var(--background);
+}
+
+.theme-dark .body-SKIE6r {
+    background-color: var(--background);
+}
+
+.theme-dark .card-7JP0BX {
+    color: var(--foreground);
+    background-color: var(--background);
+    margin: none;
+    border: none;
+}
+
+.theme-dark .headerText-2niCs_ {
+    border-top-color: var(--background);
+    color: var(--foreground);
+}
+
+.theme-dark .player-1kJMbj {
+    border-bottom-color: var(--background);
+}
+
+/* Online, Offline, DND, & Invisible Dots */
+.dnd-1_xrcq {
+    background-color: #b05f5f;
+}
+
+.online-2S838R {
+    background-color: #88aa55;
+}
+
+.idle-3DEnRT {
+    background-color: #ccb05f;
+}
+
+.invisible-1kp8Z0, .offline-3qoTek, .unknown-Ms2zdV {
+    background-color: #c0c0c2;
+}
+
+/* Autocomplete Menu */
+.autocompleteInner-zh20B_ {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: var(--cyan);
+}
+
+.theme-dark .description-11DmNu, .theme-dark .descriptionUsername-J_75O8 {
+    color: var(--foreground);
+}
+
+.theme-dark .content-Qb0rXO {
+    color: var(--foreground);
+}
+
+.theme-dark .descriptionDiscriminator-3vUOCc {
+    color: var(--foreground);
+}
+
+/* Pinged Notification */
+.wrapper-232cHJ {
+    background-color: var(--red);
+}

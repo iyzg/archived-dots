@@ -24,4 +24,4 @@ dunst &
 mpd &
 
 # Bar
-conky -c ~/.config/conky/welcome/sidekick.conkyrc &
+conky -c ~/.config/conky/welcome/welcome.conkyrc &

@@ -118,11 +118,11 @@ ${offset 60} ${voffset 0} ${font Roboto:size=14} Welcome, Ivy
 ${voffset 35}
 ${image ~/.config/conky/tersus/assets/icon.png -p 60,190}
 ${offset 135} ${voffset 1} ${font Roboto:size=14} Weather
-${offset 135} ${voffset 2} ${font Roboto:size=14} ${execi 1800 ~/bin/weather}
+${offset 135} ${voffset 2} ${font Roboto:size=14} ${execi 1800 ~/.config/conky/tersus/assets/weather}
 ${voffset 23}
 ${image ~/.config/conky/tersus/assets/queue.png -p 60,316}
 ${offset 135} ${voffset 0} ${font Roboto:size=14} Song
-${offset 135} ${voffset 1} ${font Roboto:size=14} ${exec ~/bin/mpcfetch}
+${offset 135} ${voffset 1} ${font Roboto:size=14} ${exec ~/.config/conky/tersus/assets/mpcfetch}
 ${voffset 23}
 ${image ~/.config/conky/tersus/assets/clock.png -p 60,448}
 ${offset 135} ${voffset 0} ${font Roboto:size=14} Time
@@ -130,5 +130,5 @@ ${offset 135} ${voffset 1} ${font Roboto:size=14} ${time %H:%M}
 ${voffset 23}
 ${image ~/.config/conky/tersus/assets/bat.png -p 60,574}
 ${offset 135} ${voffset 0} ${font Roboto:size=14} Battery
-${offset 135} ${voffset 1} ${font Roboto:size=14} ${exec ~/bin/battery}%
+${offset 135} ${voffset 1} ${font Roboto:size=14} ${exec ~/.config/conky/tersus/assets/batteryfetch}
 ]];

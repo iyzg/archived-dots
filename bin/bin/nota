@@ -1,19 +1,19 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
-# Nota: Note Management
-
+# Nota: Markdown Note Management
 set -e
-
 YEAR=10
 
 classes=()
 years=()
 notes=()
 
+# Get usage information
+#
+# Effects:
+#     Print out help information.
 usage() {
 cat << EOF
-
-
 USAGE:
         
     nota [year|"all"] (class)
@@ -22,20 +22,23 @@ EXAMPLES:
     
     nota 
         - Compiles notes for this year and all classes
-
     nota all
         - Compiles all notes
-
     nota 10
         - Compiles notes for 10th year
-
     nota 1 APComputerScience
         - Compiles notes for Year 1, AP Comp. Sci
-
-
 EOF
 }
 
+# Get the names of all of the classes within a year
+#
+# Args:
+#     $1 - Year
+#
+# Effects:
+#     Adds all of the class names to the classes array
+#
 getclassnames() {
     for file in $HOME/Notes/"Year$1"/*; do
         if [[ -d $file ]]; then
@@ -44,51 +47,95 @@ getclassnames() {
     done
 }
 
+# Get the names of all of the years
+#
+# Effects:
+#     Adds all of the year names to the years array
+#
 getyearnames() {
     for file in $HOME/Notes/*; do
-        if [[ -d $file ]]; then
-            years+=("$file")
+        if [[ -f $file ]]; then
+            years+=("$PWD/$file")
         fi
     done
 }
 
+# Gets the notes in a specified directory
+#
+# Effects:
+#     Adds all of the files in the directory to the notes array
+#
 getnotes() {
-    for file in $1; do
-        notes+=("$PWD/$file")
-    done   
+    for file in $(ls $1); do
+        if [[ "$file" == *.md ]]; then
+            notes+=("$file")
+        fi
+    done
 }
 
+# Converts markdown files into a conglemerate .pdf file
+#
+# Args:
+#     $1 - Name of file to output to
+#     $2 - Set of markdown files to compile together
+#
+# Effects:
+#     Creates a .pdf file with contents pulled from the markdown files and
+#     informs the user.
+#
 makepdf() {
     pandoc --pdf-engine=lualatex -H "$HOME/Notes/fonts.tex" --toc \
-        -o "$1.pdf" -f gfm "$HOME/Notes/about.md" "$2"
+        -o "$1.pdf" -f gfm "$HOME/Notes/about.md" $2
     echo "Created $1.pdf"
 }
 
+# Converts notes into a .pdf file with makepdf(1)
+#
+# Args:
+#     $1 - Year of notes to make
+#     $2 - Class of notes to make
+#
+# Effects:
+#     Compiles all of the notes within a specified class of a specified year
+#     into a pdf for each class and year. Wildcards *are* permitted and used
+#     when compiling all years or all classes within a year.
+#
+#     e.g.
+#         `makepdf "2018" "Biology"`
+#         would create a file named `$NOTES/Year2018/ClassBiology/Biology.pdf`
+#         contains all of the notes within `$NOTES/Year2018/ClassBiology`. As
+#         well as creating a file named `$NOTES/Year2018/2018.pdf` that contains
+#         all of the notes from `$NOTES/Year2018/*/`.
+# 
 makenotes() {
     for year in $HOME/Notes/Year$1; do
         for class in $year/Class$2; do
             cd "$class"
             getnotes "$class"
-            output_file="$class/"$(basename "$class")           
-            
-            makepdf "$output_file" "$notes"
-
+            output_file="$class/"$(basename "$class")
+            makepdf "$output_file" "${notes[*]}"
             unset notes output_file
-
             cd - &>/dev/null
         done
-
         cd "$year"
         echo "Compiling Year $year's PDF"
-        
         gs -sDEVICE=pdfwrite \
             -dQUIET \
             -o "$(basename $year).pdf" \
-            Class*/*.pdf &&
+            Class*/*.pdf
         echo "Created ${year}.pdf"
     done
 }
 
+# Interpet arguments
+#
+# Args:
+#     $1 - Year or general set of notes to compile
+#     $2 - Specific class to compile
+#
+# Effects:
+#     Runs argument specified commands.
+#
 main() {
     case "$1" in
         "all")

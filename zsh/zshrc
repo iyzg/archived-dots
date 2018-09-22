@@ -18,6 +18,7 @@ alias pcupdate='sudo pacman -Syu'
 alias pcclean='sudo pacman -Rs $(pacman -Qqdt)'
 alias vim="nvim"
 alias display="cat"
+alias mupdf="mupdf -C f6f6f6"
 
 # Oh-My-ZSH
 # PATH
