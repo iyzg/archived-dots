@@ -42,7 +42,8 @@ EOF
 getclassnames() {
     for file in $HOME/Notes/"Year$1"/*; do
         if [[ -d $file ]]; then
-            classes+=("$file")
+            classes+=($(basename "$file"))
+            echo $file
         fi
     done
 }
@@ -157,9 +158,11 @@ main() {
                 echo "[Notes] Finished Compiling Year $1"
             else
                 getclassnames "$1"
+                echo
                 found=false
-                for class in "${arr[@]}"; do
-                    if [[ "Class${class}" == "$2" ]]; then
+                for class in "${classes[@]}"; do
+                    echo "$class"
+                    if [[ "${class}" == "Class$2" ]]; then
                         found=true
                         break
                     fi
