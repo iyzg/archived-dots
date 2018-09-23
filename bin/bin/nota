@@ -159,7 +159,7 @@ main() {
                 getclassnames "$1"
                 found=false
                 for class in "${arr[@]}"; do
-                    if [[ "$class" == "$2" ]]; then
+                    if [[ "Class${class}" == "$2" ]]; then
                         found=true
                         break
                     fi
