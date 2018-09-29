@@ -1,20 +1,20 @@
 " Plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'mhinz/vim-startify'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'dylanaraps/wal.vim'
-Plug 'iiPlasma/accommodare'
 Plug 'w0rp/ale'
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'Yggdroot/indentLine'
-Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/fzf'
 Plug 'airblade/vim-gitgutter'
-Plug 'noahfrederick/vim-noctu'
 
 call plug#end()
 "}}}
@@ -24,6 +24,15 @@ call plug#end()
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " }}}
+
+
+" Color name (:help gui-colors) or RGB color
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
 
 " NERDCommenter {{{
 filetype plugin on

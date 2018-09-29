@@ -1,0 +1,22 @@
+! -- Title:     ocean
+! -- Author:    ???
+! -- Created:   ???
+
+#define bg    #2b303b
+#define fg    #c0c5ce
+#define blk   #2b303b
+#define bblk  #65737e
+#define red   #bf616a
+#define grn   #a3be8c
+#define ylw   #ebcb8b
+#define blu   #8fa1b3 
+#define mag   #b48ead
+#define cyn   #96b5b4
+#define wht   #c0c5ce
+#define bred  #bf616a
+#define bgrn  #a3be8c
+#define bylw  #ebcb8b
+#define bblu  #8fa1b3
+#define bmag  #b48ead
+#define bcyn  #96b5b4
+#define bwht  #eff1f5

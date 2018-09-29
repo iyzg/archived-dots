@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -e
+
+main() {
+  previous_file="$1"
+  file_to_edit=`select_file $previous_file`
+
+  if [ -n "$file_to_edit" ] ; then
+    nvim "$file_to_edit"
+    main "$file_to_edit"
+  fi
+}
+
+select_file() {
+    given_file="$1"
+    output=`fzf --preview="cat {}" --preview-window=right:70%:wrap --print-query --query="$given_file"`
+    if [ $? -eq 1 ] ; then
+        echo "$output"
+    else
+        echo "$output" | tail -n 1
+    fi
+}
+
+main ""

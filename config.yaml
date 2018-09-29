@@ -27,6 +27,11 @@ options:
         links:
             - dunstrc: .config/dunst/dunstrc
     
+    gtkPackage:
+        directoryName: gtk
+        links:
+            - mnml: .themes/mnml
+
     mpdPackage:
         directoryName: mpd
         links:
@@ -48,6 +53,7 @@ options:
         links:
             - circulus: .themes/Circulus
             - tricky: .themes/Tricky
+            - whitey: .themes/Whitey
 
     openboxPackage:
         directoryName: openbox

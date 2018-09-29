@@ -64,6 +64,11 @@
                     <execute>discord</execute>
                 </action>
             </item>
+            <item label="Lutris">
+                <action name="Execute">
+                    <execute>lutris</execute>
+                </action>
+            </item>
             <item label="Steam">
                 <action name="Execute">
                     <execute>steam</execute>

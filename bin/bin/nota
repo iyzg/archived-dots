@@ -8,6 +8,16 @@ classes=()
 years=()
 notes=()
 
+read -r -d '\0' message << EOF
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Plasma's Notes</title>
+  <link rel="icon" type="image/png" href="https://u.teknik.io/aL524.png">
+</head>
+<body> 
+\0
+EOF
+
 # Get usage information
 #
 # Effects:
@@ -84,10 +94,16 @@ getnotes() {
 #     informs the user.
 #
 makepdf() {
-    pandoc --pdf-engine=lualatex -H "$HOME/Notes/fonts.tex" --toc \
-        -o "$1.pdf" -f gfm "$HOME/Notes/about.md" $2
+    pandoc -V geometry:margin=1in -H "$HOME/Notes/fonts.tex" --toc \
+        --pdf-engine=xelatex -o "$1.pdf" "$HOME/Notes/about.md" $2
     echo "Created $1.pdf"
 }
+
+makehtml() {
+    pandoc --webtex -o "$1.html" "$HOME/Notes/about.md" $2
+    echo "Created $1.html"
+}
+
 
 # Converts notes into a .pdf file with makepdf(1)
 #
@@ -113,7 +129,11 @@ makenotes() {
             cd "$class"
             getnotes "$class"
             output_file="$class/"$(basename "$class")
-            makepdf "$output_file" "${notes[*]}"
+
+            makepdf "$output_file" "${notes[*]}" &
+            makehtml "$output_file" "${notes[*]}" &
+            
+            wait 
             unset notes output_file
             cd - &>/dev/null
         done
@@ -125,6 +145,24 @@ makenotes() {
             Class*/*.pdf
         echo "Created ${year}.pdf"
     done
+
+    mv $(find -name "*.html") "$HOME/Notes/docs"
+
+    echo "[Notes] Applying CSS"
+
+    cd "$HOME/Notes/"
+    for file in ~/Notes/docs/*.html; do
+        if [[ $(tail -n 1 $file) == "</body>" ]]; then
+            continue
+        fi
+        echo "</body>" >> $file
+        mv $file temp
+        echo "$message">$file
+        cat temp>>$file
+        rm temp
+    done
+
+    echo "[Notes] CSS Applied"
 }
 
 # Interpet arguments
