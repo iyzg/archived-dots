@@ -28,7 +28,6 @@ shadow-exclude = [
 	"class_g = 'Conky'",
 	"class_g ?= 'Notify-osd'",
 	"class_g = 'Tilda'",
-	"class_g = 'Firefox'",
 	"class_g = 'Opera'",
 	"class_g = 'CoverGloobus'",
 	"class_g = 'Cairo-clock'",

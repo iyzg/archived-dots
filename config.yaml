@@ -27,6 +27,11 @@ options:
         links:
             - dunstrc: .config/dunst/dunstrc
     
+    firefoxPackage:
+        directoryName: firefox
+        links:
+            - userChrome: .mozilla/firefox/xmffpcc7.default/chrome/userChrome.css
+
     gtkPackage:
         directoryName: gtk
         links:

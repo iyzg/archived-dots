@@ -1,0 +1,27 @@
+/* Hide Horizontal Tabs */
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+/* Autohide Sidebar */
+/*Collapse in default state and add transition*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  overflow: hidden;
+  min-width: 0px;
+  max-width: 0px;
+  transition: all 0.2s ease;
+  border-right: 1px solid #f6f6f6;
+  z-index: 2;
+}
+
+/*Expand to 260px on hover*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+  min-width: 260px !important;
+  max-width: 260px !important;
+}
+
