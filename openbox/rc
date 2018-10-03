@@ -23,7 +23,7 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Ancok</name>
+    <name>Subtle</name>
     <cornerRadius>8</cornerRadius>
     <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
