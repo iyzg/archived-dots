@@ -25,6 +25,3 @@ mpd &
 
 # Conky
 conky -c ~/.config/conky/welcome/welcome.conkyrc &
-
-# Bar
-tint2 -c ~/.config/tint2/statis.tint2rc &
