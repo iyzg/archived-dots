@@ -1,7 +1,7 @@
 <div align="center">
 	<h3>Plasma's Dotfiles, Made With ❤</h3>
 	<!-- current desktop -->
-	<img src="ss 10-02-2018_21 06](https://user-images.githubusercontent.com/32868356/46385161-9c9a2600-c688-11e8-8971-2039d56fd3a4.png">
+	<img src="https://user-images.githubusercontent.com/32868356/46385161-9c9a2600-c688-11e8-8971-2039d56fd3a4.png">
 
 `current setup` `openbox theme: whitey` `tint2 theme: none` `xresources color: lux`
 
