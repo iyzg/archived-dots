@@ -47,6 +47,7 @@ options:
         links:
             - config-aurora: .ncmpcpp/config-aurora
             - config-griseo: .ncmpcpp/config-griseo
+              config-hana: .ncmpcpp/config-hana
 
     neovimPackage:
         directoryName: neovim
