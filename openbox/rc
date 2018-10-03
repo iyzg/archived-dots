@@ -23,7 +23,7 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Whitey</name>
+    <name>Ancok</name>
     <cornerRadius>8</cornerRadius>
     <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
