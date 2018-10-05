@@ -117,3 +117,4 @@ ${voffset -18}你好, 张添
 ${font Arcon:size=14} ${time %A}
 ${font Arcon:size=14} ${time %h %d}
 ]];
+

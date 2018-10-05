@@ -1,12 +1,8 @@
-" Plugins {{{
+" Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'mhinz/vim-startify'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
 Plug 'dylanaraps/wal.vim'
 Plug 'w0rp/ale'
-Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'Yggdroot/indentLine'
@@ -17,37 +13,28 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 
 call plug#end()
-"}}}
 
-" Plugin Settings {{{
-" NERDTree {{{
+" Plugin Settings
+" Ale
+let g:ale_linters = {
+\   'python': ['pycodestyle', 'autopep8', 'flake8', 'pylint'],
+\} 
+
+" NERDTree 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" }}}
 
-
-" Color name (:help gui-colors) or RGB color
-let g:limelight_conceal_guifg = 'DarkGray'
-let g:limelight_conceal_guifg = '#777777'
-
-" Color name (:help cterm-colors) or ANSI code
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
-
-" NERDCommenter {{{
+" NERDCommenter
 filetype plugin on
 
 let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
-" }}}
 
-" IndentLine {{{
+" IndentLine 
 let g:indentLine_char = '┆'
-" }}}
 
-" Colorscheme {{{
+" Colorscheme 
 colorscheme wal
-" }}}
 
 " Settings
 set noshowmode

@@ -1,6 +1,6 @@
 # Autostart
 # Background
-feh --bg-scale ~/wallpaper/cherryBlossomsOneEdited.jpg
+feh --bg-scale ~/wallpaper/seasideOneEdited.jpg
 
 # Internet
 sudo NetworkManager 
@@ -24,4 +24,4 @@ dunst &
 mpd &
 
 # Conky
-conky -c ~/.config/conky/welcome/welcome.conkyrc &
+conky -c ~/.config/conky/WIP/WIP.conkyrc

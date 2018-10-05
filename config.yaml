@@ -16,7 +16,7 @@ options:
         directoryName: conky
         links:
             - tersus: .config/conky/tersus
-              welcome: .config/conky/welcome
+            - welcome: .config/conky/welcome
 
     discordPackage:
         directoryName: discord
@@ -59,6 +59,7 @@ options:
         directoryName: obthemes
         links:
             - circulus: .themes/Circulus
+            - subtle: .themes/Subtle
             - tricky: .themes/Tricky
             - whitey: .themes/Whitey
 

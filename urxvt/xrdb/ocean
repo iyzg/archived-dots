@@ -3,7 +3,7 @@
 ! -- Created:   ???
 
 #define bg    #2b303b
-#define fg    #c0c5ce
+#define fg    #c5cad2
 #define blk   #2b303b
 #define bblk  #65737e
 #define red   #bf616a
