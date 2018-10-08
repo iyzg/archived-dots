@@ -24,7 +24,8 @@
   <!-- OB Theme -->
   <theme>
     <name>Subtle</name>
-    <cornerRadius>8</cornerRadius>
+    <cornerRadius>13</cornerRadius>
+    <cornerRadius menu="yes">8</cornerRadius>
     <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>

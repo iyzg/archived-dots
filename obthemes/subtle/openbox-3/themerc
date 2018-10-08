@@ -1,8 +1,21 @@
 # Decorator
 window.active.title.bg.color: #2b303b
 window.inactive.title.bg.color: #2b303b
-window.*.label.text.color: #c5cad2
-window.*.button.*.image.color: #c5cad2
+window.*.label.text.color: #2b303b
+window.*.button.*.image.color: #2b303b
+
+# Buttons
+window.active.button.close.unpressed.image.color: #2b303b
+window.active.button.close.pressed.image.color: #bf616a
+window.active.button.close.hover.image.color: #bf616a
+
+window.active.button.iconify.unpressed.image.color: #2b303b
+window.active.button.iconify.pressed.image.color: #ebcb8b
+window.active.button.iconify.hover.image.color: #ebcb8b
+
+window.active.button.max.unpressed.image.color: #2b303b
+window.active.button.max.pressed.image.color: #a3be8c
+window.active.button.max.hover.image.color: #a3be8c
 
 # Borders
 window.handle.width: 0

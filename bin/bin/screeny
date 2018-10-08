@@ -3,5 +3,5 @@
 # Screeny - Take a screenshot
 
 scrot 'SS:%m-%d-%Y_%H:%M.png' -e 'mv $f ~/Pictures/Screenshots/'
-notify-send " Scrot: Screenshot Taken"
+notify-send "Scrot: Screenshot Taken"
 

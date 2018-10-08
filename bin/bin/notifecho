@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -r firstline</home/plasma/notif
+
+echo "$firstline"

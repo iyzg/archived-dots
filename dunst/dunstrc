@@ -1,6 +1,6 @@
 [global]
 monitor = 0
-transparency = 100
+transparency = 0
 follow = mouse
 geometry = "275x50-30+30"
 indicate_hidden = yes
