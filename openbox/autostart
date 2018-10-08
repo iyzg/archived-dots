@@ -23,11 +23,6 @@ mpd &
 # Conky
 conky -c ~/.config/conky/WIP/WIP.conkyrc &
 
-# IDK This is weird
-dunst
-
-killall dunst
-
 # Notifications
 statnot ~/statnotconfig.py &
 

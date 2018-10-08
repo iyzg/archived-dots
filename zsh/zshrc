@@ -13,13 +13,27 @@ export PATH="$PATH:$HOME/.local/bin"
 export VISUAL="vim"
 
 # Aliases
+## General
 alias ls='ls --color=auto'
+
+## Pacman
 alias pcinstall='sudo pacman -S'
 alias pcupdate='sudo pacman -Syu'
+alias pcremove='sudo pacman -Rs'
 alias pcclean='sudo pacman -Rs $(pacman -Qqdt)'
+
+## Fonts
+alias fontr='fc-cache -fvr'
+
+## QOL 
 alias vim="nvim"
-alias display="cat"
 alias mupdf="mupdf -C f6f6f6"
+
+## Git
+alias gita='git add .'
+alias gitc='git commit -m '
+alias gitp='git push'
+alias gits='git status'
 
 # Oh-My-ZSH
 # PATH
