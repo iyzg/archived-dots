@@ -68,5 +68,5 @@ visualizer_color = "white"
 visualizer_look = "∙│"
 
 # Notification
-execute_on_song_change = notify-send "♫ Playing: $(mpc current)"
+execute_on_song_change = notify-send "Now Playing: $(mpc current)"
 

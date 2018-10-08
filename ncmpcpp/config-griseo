@@ -544,3 +544,5 @@ window_border_color = green
 active_window_border = red
 #
 allow_for_physical_item_deletion = "yes"
+
+execute_on_song_change = notify-send "Now Playing:" "$(mpc current)"
