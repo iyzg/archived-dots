@@ -1,0 +1,154 @@
+--[[
+#=====================================================================================
+#                               
+# Date    : 06/07/2017
+# name    : Parla
+# Author  : Adhi Pambudi
+#           https://plus.google.com/+AdhiPambudi
+#           https://addy-dclxvi.deviantart.com
+#			https://github.com/addy-dclxvi
+# Editor  : Adhi Pambudi
+# Version : v0.01
+# License : Distributed under the terms of GNU GPL version 2 or later
+#=====================================================================================
+]]
+
+
+conky.config = {
+--##  Begin Window Settings  #####################
+own_window = true,
+own_window_type = 'desktop',
+own_window_transparent = true,
+own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+own_window_colour = '#000000',
+own_window_class = 'Conky',
+own_window_title = 'Sidekick Conky',
+--## ARGB can be used for real transparency
+--## NOTE that a composite manager is required for real transparency.
+--## This option will not work as desired (in most cases) in conjunction with
+--## own_window_type normal
+-- own_window_argb_visual yes # Options: yes or no
+
+--## When ARGB visuals are enabled, this use this to modify the alpha value
+--## Use: own_window_type normal
+--## Use: own_window_transparent no
+--## Valid range is 0-245, where 0 is 0% opacity, and 245 is 100% opacity.
+-- own_window_argb_value 50
+
+minimum_width = 1920, 
+minimum_height = 30,
+maximum_width = 1920,
+
+gap_x = 35,--## left | right
+gap_y = 35,--## up | down
+
+alignment = 'bottom_left',
+--######################  End Window Settings  ###
+--##  Font Settings  #############################
+-- Use Xft (anti-aliased font and stuff)
+use_xft = true,
+font = 'Arcon:size=14',
+
+
+-- Alpha of Xft font. Must be a value at or between 1 and 0 ###
+xftalpha = 1,
+-- Force UTF8? requires XFT ###
+override_utf8_locale = true,
+
+uppercase = false,
+--########################  End Font Settings  ###
+--##  Colour Settings  ###########################
+draw_shades = false,--yes
+default_shade_color = 'black',
+
+draw_outline = false,-- amplifies text if yes
+default_outline_color = 'black',
+
+default_color = '#ffffff',-- White
+color1 = '#bf616a',-- Red
+color2 = '#a3be8c',-- Green
+color3 = '#ebcb8b',-- Yellow
+color4 = '#81a1c1',-- Blue
+--######################  End Colour Settings  ###
+--##  Borders Section  ###########################
+draw_borders = false,
+-- Stippled borders?
+stippled_borders = 5,
+-- border margins
+border_inner_margin = 40,
+border_outer_margin = 0,
+-- border width
+border_width = 2,
+-- graph borders
+draw_graph_borders = true,--no
+--default_graph_size 15 40
+--#######################  End Borders Secton  ###
+--##  Miscellaneous Section  #####################
+-- Boolean value, if true, Conky will be forked to background when started.
+background = true,
+-- Adds spaces around certain objects to stop them from moving other things
+-- around, this only helps if you are using a mono font
+-- Options: right, left or none
+use_spacer = 'none',
+
+-- Default and Minimum size is 246 - needs more for single commands that
+-- "call" a lot of text IE: bash scripts
+--text_buffer_size 6144
+
+-- Subtract (file system) buffers from used memory?
+no_buffers = true,
+
+-- change GiB to G and MiB to M
+short_units = true,
+
+-- Like it says, ot pads the decimals on % values
+-- doesn't seem to work since v1.7.1
+pad_percents = 2,
+
+-- Imlib2 image cache size, in bytes. Default 4MiB Increase this value if you use
+-- $image lots. Set to 0 to disable the image cache.
+imlib_cache_size = 0,
+
+-- Use the Xdbe extension? (eliminates flicker)
+-- It is highly recommended to use own window with this one
+-- so double buffer won't be so big.
+double_buffer = true,
+
+--   Maximum size of user text buffer, i.e. layout below TEXT line in config file
+--  (default is 16384 bytes)
+-- max_user_text 16384
+
+-- Desired output unit of all objects displaying a temperature. Parameters are
+-- either "fahrenheit" or "celsius". The default unit is degree Celsius.
+-- temperature_unit Fahrenheit
+--################  End Miscellaneous Section  ###
+
+update_interval = 1,
+
+};
+
+conky.text = [[
+${if_match "50" != "${exec ~/bin/notifecho}"}\
+    ${image ~/.config/conky/WIP/assets/alert.png -p 780,24 -s 24x24} 
+    ${offset 795} ${exec ~/bin/notifecho}\
+${else}\
+    ${image ~/.config/conky/WIP/assets/music.png -p 780,22 -s 24x24}
+    ${offset 795} ${exec mpc current}\
+${endif}
+${voffset -30} ${offset 20}Battery
+${voffset -24} ${offset 1780}Wifi
+${voffset -315}
+${image ~/.config/conky/WIP/assets/batt/dotOne.png -p 90,26 -s 8x8}
+${image ~/.config/conky/WIP/assets/batt/dotTwo.png -p 100,26 -s 8x8}
+${image ~/.config/conky/WIP/assets/batt/dotThree.png -p 110,26 -s 8x8}
+${image ~/.config/conky/WIP/assets/batt/dotFour.png -p 120,26 -s 8x8}
+${image ~/.config/conky/WIP/assets/batt/dotFive.png -p 130,26 -s 8x8}
+${image ~/.config/conky/WIP/assets/wifi/dotOne.png -p 1770,24 -s 8x8}
+${image ~/.config/conky/WIP/assets/wifi/dotTwo.png -p 1760,24 -s 8x8}
+${image ~/.config/conky/WIP/assets/wifi/dotThree.png -p 1750,24 -s 8x8}
+${image ~/.config/conky/WIP/assets/wifi/dotFour.png -p 1740,24 -s 8x8}
+${image ~/.config/conky/WIP/assets/wifi/dotFive.png -p 1730,24 -s 8x8}
+${execi 600 ~/.config/conky/WIP/assets/scripts/battery}
+${execi 600 ~/.config/conky/WIP/assets/scripts/wifi}
+]];
+

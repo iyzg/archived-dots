@@ -1,10 +1,10 @@
 /* Aurora's Theme: Slate */
 
 :root {
-    --background: #f6f6f6;
-    --red: #ef978b;
-    --foreground: #41454c;
-    --cyan: #72a7cf;
+    --background: #2b303b;
+    --red: #bf616a;
+    --foreground: #c5cad2;
+    --cyan: #96b5b4;
 }
 /* Channel List Section */
 .scroller-2wx7Hm {
@@ -383,3 +383,15 @@
 .wrapper-232cHJ {
     background-color: var(--red);
 }
+
+/* Homepage Searchbar */
+.searchBar-6Kv8R2 {
+    background-color: var(--background);
+}
+
+.noIcon-1a_FrS {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+

@@ -18,7 +18,7 @@
   min-width: 0px;
   max-width: 0px;
   transition: all 0.2s ease;
-  border-right: 1px solid #f6f6f6;
+  border-right: 1px solid #2b303b;
   z-index: 2;
 }
 

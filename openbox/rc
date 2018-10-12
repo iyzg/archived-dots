@@ -26,7 +26,7 @@
     <name>Subtle</name>
     <cornerRadius>13</cornerRadius>
     <cornerRadius menu="yes">8</cornerRadius>
-    <titleLayout>IMC</titleLayout>
+    <titleLayout/>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <!-- Element Fonts -->
@@ -94,6 +94,18 @@
     <rebindOnMappingChange>yes</rebindOnMappingChange>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings -->
+    <!-- General Usage -->
+    <keybind key="C-f">
+      <keybind key="m">
+        <action name="ToggleMaximizeFull"/>
+      </keybind>
+      <keybind key="x">
+        <action name="Close"/> 
+      </keybind>
+      <keybind key="s">
+        <action name="ToggleShade"/>
+      </keybind>
+    </keybind>
     <!-- Desktop Switching -->
     <keybind key="W-1">
       <action name="GoToDesktop">

@@ -20,10 +20,5 @@ clipit &
 # Music
 mpd &
 
-# Conky
-conky -c ~/.config/conky/WIP/WIP.conkyrc &
-
 # Notifications
 statnot ~/statnotconfig.py &
-
-notify-send "System started, Welcome Ivy"

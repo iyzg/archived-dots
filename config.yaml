@@ -17,6 +17,7 @@ options:
         links:
             - tersus: .config/conky/tersus
             - welcome: .config/conky/welcome
+            - wip: .config/conky/WIP
 
     discordPackage:
         directoryName: discord

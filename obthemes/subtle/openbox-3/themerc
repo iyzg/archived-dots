@@ -1,52 +1,52 @@
 # Decorator
-window.active.title.bg.color: #2b303b
-window.inactive.title.bg.color: #2b303b
-window.*.label.text.color: #2b303b
-window.*.button.*.image.color: #2b303b
+window.active.title.bg.color: #2f343f
+window.inactive.title.bg.color: #2f343f
+window.*.label.text.color: #2f343f
+window.*.button.*.image.color: #2f343f
 
 # Buttons
-window.active.button.close.unpressed.image.color: #2b303b
+window.active.button.close.unpressed.image.color: #2f343f
 window.active.button.close.pressed.image.color: #bf616a
 window.active.button.close.hover.image.color: #bf616a
 
-window.active.button.iconify.unpressed.image.color: #2b303b
+window.active.button.iconify.unpressed.image.color: #2f343f
 window.active.button.iconify.pressed.image.color: #ebcb8b
 window.active.button.iconify.hover.image.color: #ebcb8b
 
-window.active.button.max.unpressed.image.color: #2b303b
+window.active.button.max.unpressed.image.color: #2f343f
 window.active.button.max.pressed.image.color: #a3be8c
 window.active.button.max.hover.image.color: #a3be8c
 
-# Borders
-window.handle.width: 0
-window.client.padding.width: 0
-border.width: 0
-
 # Title
-padding.width: 8
-padding.height: 8
+padding.width: 0
+padding.height: 0
 window.*.title.bg: Solid Flat
 window.*.*.bg: Parentrelative
 window.label.text.justify: center
 
 # Menu
 menu.border.width: 12
-menu.border.color: #2b303b
+menu.border.color: #2f343f
 menu.overlap.x: -15
 menu.*.bg: flat solid
-menu.*.bg.color: #2b303b
-menu.*.color: #c5cad2
-menu.title.text.color: #c5cad2
-menu.items.text.color: #c5cad2
+menu.*.bg.color: #2f343f
+menu.*.color: #d8dee8
+menu.title.text.color: #d8dee8
+menu.items.text.color: #d8dee8
 menu.items.active.text.color: #edf3ff
 menu.title.text.justify: center
 
 # OSD
 osd.border.width: 1
-osd.border.color: #2b303b
+osd.border.color: #2f343f
 osd.bg: flat solid
-osd.bg.color: #2b303b
+osd.bg.color: #2f343f
 osd.label.bg: flat solid
-osd.label.bg.color: #2b303b
+osd.label.bg.color: #2f343f
 osd.hilight.bg: flat solid
-osd.hilight.bg.color: #c5cad2
+osd.hilight.bg.color: #d8dee8
+
+# Borders
+window.handle.width: 0
+window.client.padding.width: 0
+border.width: 0
