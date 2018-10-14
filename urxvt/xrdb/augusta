@@ -1,0 +1,22 @@
+! -- Title:   aurum
+! -- Author:  plasma
+! -- Created: Oct. 2018
+
+#define bg   #332d34
+#define fg   #dddbcc
+#define blk  #41454c
+#define bblk #41454c
+#define red  #bfa69c
+#define bred #bfa69c
+#define grn  #9cbfab
+#define bgrn #9cbfab
+#define ylw  #ab9c8f
+#define bylw  #ab9c8f
+#define blu  #9dbac0
+#define bblu #9dbac0
+#define mag  #857275
+#define bmag #857275
+#define cyn  #9cb2bf
+#define bcyn #9cb2bf
+#define wht  #dddbcc
+#define bwht #dddbcc

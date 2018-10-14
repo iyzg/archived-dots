@@ -38,4 +38,3 @@ else
     $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
     $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
 fi 
-

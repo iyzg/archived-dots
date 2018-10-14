@@ -23,10 +23,10 @@
   </placement>
   <!-- OB Theme -->
   <theme>
-    <name>Subtle</name>
+    <name>Whitey</name>
     <cornerRadius>13</cornerRadius>
     <cornerRadius menu="yes">8</cornerRadius>
-    <titleLayout/>
+    <titleLayout>IMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <!-- Element Fonts -->
@@ -100,7 +100,7 @@
         <action name="ToggleMaximizeFull"/>
       </keybind>
       <keybind key="x">
-        <action name="Close"/> 
+        <action name="Close"/>
       </keybind>
       <keybind key="s">
         <action name="ToggleShade"/>

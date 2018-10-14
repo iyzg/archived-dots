@@ -42,7 +42,7 @@ set nowrap
 set number
 
 " Tab Settings
-" General
+"" General
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -50,8 +50,6 @@ set shiftwidth=4
 set smarttab
 
 " XML
-
-" for html/rb files, 2 spaces
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
 
 " Swap Files 
@@ -83,8 +81,6 @@ let g:currentmode={
 hi PrimaryBlock   ctermfg =00 ctermbg=01
 hi SecondaryBlock ctermfg =00 ctermbg=01
 hi Blanks         ctermfg =00 ctermbg=01
-
-highlight EndOfBuffer ctermfg=black ctermbg=black
 
 set statusline=
 set statusline+=%#PrimaryBlock#

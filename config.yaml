@@ -38,6 +38,7 @@ options:
         directoryName: gtk
         links:
             - mnml: .themes/mnml
+            - fantome: .themes/Fantome
 
     mpdPackage:
         directoryName: mpd
