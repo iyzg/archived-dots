@@ -1,0 +1,18 @@
+#!/bin/bash
+BATTERY=1
+BATTERY_INFO=$(acpi -b | grep "Battery ${BATTERY}")
+BATTERY_STATE=$(echo "${BATTERY_INFO}" | grep -wo "Full\|Charging\|Discharging")
+BATTERY_POWER=$(echo "${BATTERY_INFO}" | grep -o '[0-9]\+%' | tr -d '%')
+
+if (( $BATTERY_POWER > 90 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/battery/battery-100.png $HOME/.config/conky/exemplum/assets/bar/battery.png)
+elif (( $BATTERY_POWER > 75 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/battery/battery-75.png $HOME/.config/conky/exemplum/assets/bar/battery.png)
+elif (( $BATTERY_POWER > 50 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/battery/battery-50.png $HOME/.config/conky/exemplum/assets/bar/battery.png)
+elif (( $BATTERY_POWER > 25 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/battery/battery-25.png $HOME/.config/conky/exemplum/assets/bar/battery.png)
+else
+    $(ln -sf $HOME/.config/conky/exemplum/assets/battery-0.png $HOME/.config/conky/exemplum/assets/bar/battery.png)
+fi 
+

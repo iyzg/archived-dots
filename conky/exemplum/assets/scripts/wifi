@@ -1,0 +1,18 @@
+#!/bin/env bash
+
+signal=$(iwconfig wlp2s0 | grep -i Link)
+signalsplit=($signal)
+
+
+STRENGTH=$(echo "${signalsplit[3]}" | tr -dc '0-9')
+
+
+if (( $STRENGTH > 53 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/wifi/wifi-full.png $HOME/.config/conky/exemplum/assets/bar/wifi.png)
+elif (( $STRENGTH > 36 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/wifi/wifi-half.png $HOME/.config/conky/exemplum/assets/bar/wifi.png)
+elif (( $STRENGTH > 19 )); then
+    $(ln -sf $HOME/.config/conky/exemplum/assets/wifi/wifi-low.png $HOME/.config/conky/exemplum/assets/bar/wifi.png)
+else
+    $(ln -sf $HOME/.config/conky/exemplum/assets/wifi/wifi-none.png $HOME/.config/conky/exemplum/assets/bar/wifi.png)
+fi 

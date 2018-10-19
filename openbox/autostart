@@ -1,6 +1,6 @@
 # Autostart
 # Background
-feh --bg-scale ~/wallpaper/seasideOneEdited.jpg
+feh --bg-scale ~/wallpaper/autumnOneEdited.jpg
 
 # Internet
 sudo NetworkManager 
@@ -22,3 +22,6 @@ mpd &
 
 # Notifications
 statnot ~/statnotconfig.py &
+
+# Conky
+conky -c ~/.config/conky/exemplum/exemplum.conkyrc &

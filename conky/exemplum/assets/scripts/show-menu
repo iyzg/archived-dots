@@ -1,0 +1,5 @@
+#!/bin/bash
+conky -c $HOME/.config/conky/exemplum/menu.conkyrc &
+pid=$!
+sleep 3
+kill -SIGKILL $pid

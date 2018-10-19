@@ -35,6 +35,12 @@ alias gitc='git commit -m '
 alias gitp='git push'
 alias gits='git status'
 
+## Wifi
+alias wifid='sudo ip link set wlp2s0 down'
+alias wifiu='sudo ip link set wlp2s0 up'
+alias macc='sudo macchanger -r wlp2s0'
+alias macr='sudo macchanger -p wlp2s0'
+
 # Oh-My-ZSH
 # PATH
 export ZSH=/home/plasma/.oh-my-zsh

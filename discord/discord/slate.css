@@ -192,7 +192,7 @@
     border: 0px solid transparent !important;
     border-left: 0px solid transparent !important;
     border-radius: 2px !important;
-    background-color: var(--background) !important;
+    background-color: var(--foreground) !important;
 }
 
 /* Is Mentioned Bar */
