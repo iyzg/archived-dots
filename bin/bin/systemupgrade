@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# Upgrade Your System!
-for pak in "$(pacman -Ss)"; do
-    sudo pacman -S --noconfirm "$pak"
-done

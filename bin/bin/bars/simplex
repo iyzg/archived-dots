@@ -1,0 +1,52 @@
+#!/bin/env bash
+
+FOREGROUND='#a1a8b9'
+BACKGROUND='#131c26'
+TRANSPARENT='#00000000'
+
+
+# Setup stack for lemonbar
+PANEL_FIFO=/tmp/panel-fifo
+
+rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+# Lemonbar modules
+# Welcome
+while :; do
+    echo 'W' "          Welcome, Plasma"
+    sleep 1800
+done > $PANEL_FIFO &
+
+
+# Clock
+while :; do
+    echo 'C' "   $(date '+%b  %e, %H:%M')"
+    sleep 10
+done > $PANEL_FIFO &
+
+# Read from stack
+while read -r line < "$PANEL_FIFO" ; do
+    case $line in
+        W*)
+            # Welcome Output
+            welcome="%{F$FOREGROUND}%{B$BACKGROUND} ${line#?} %{O15}%{B-}%{F-}"
+            ;;
+        C*)
+            # Clock Output
+            clock="%{F$FOREGROUND}%{B$BACKGROUND} ${line#?} %{O15}%{B-}%{F-}"
+            ;;
+    esac
+
+    printf "%s\n" "%{l}${welcome}%{r}${clock}"
+done |\
+
+    lemonbar -n "Simplex" \
+             -d \
+             -g "1800x40+0+50" \
+             -f "Roboto" \
+             -F "$FOREGROUND" -B "$TRANSPARENT" |
+
+    bash &
+
+wait

@@ -1,6 +1,6 @@
 # Autostart
 # Background
-feh --bg-scale ~/wallpaper/autumnOneEdited.jpg
+hsetroot -solid "#baa8c9"
 
 # Internet
 sudo NetworkManager 
@@ -20,8 +20,5 @@ clipit &
 # Music
 mpd &
 
-# Notifications
-statnot ~/statnotconfig.py &
-
-# Conky
-conky -c ~/.config/conky/exemplum/exemplum.conkyrc &
+# Lemonbar
+./~/bin/bars/simplex &

@@ -582,7 +582,7 @@
     <bottom>0</bottom>
   </margins>
   <applications>
-    <application name="feh" class="feh">
+    <application class="*">
       <decor>no</decor>
     </application>
   </applications>

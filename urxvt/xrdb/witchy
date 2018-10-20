@@ -1,0 +1,22 @@
+! -- Title   witchy
+! -- Author  unknown
+! -- Created 2018?
+
+#define bg   #131c26
+#define fg   #a1a8b9
+#define blk  #725f8f
+#define bblk #b18bbf
+#define red  #c17286
+#define bred #c17286
+#define grn  #a29395
+#define bgrn #a29395
+#define ylw  #dba5a8
+#define bylw #dba5a8
+#define blu  #be8ac9
+#define bblu #be8ac9
+#define mag  #db8ac9
+#define bmag #db8ac9
+#define cyn  #baa8c9
+#define bcyn #baa8c9
+#define wht  #95948f
+#define bwht #ead1be
