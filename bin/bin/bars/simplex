@@ -34,7 +34,7 @@ while read -r line < "$PANEL_FIFO" ; do
             ;;
         C*)
             # Clock Output
-            clock="%{F$FOREGROUND}%{B$BACKGROUND} ${line#?} %{O15}%{B-}%{F-}"
+            clock="%{F$FOREGROUND}%{B$BACKGROUND} %{A:conky -c ~/.config/conky/popup/popup.conkyrc &:}%{A3:killall conky:}${line#?}%{A}%{A} %{O15}%{B-}%{F-}"
             ;;
     esac
 

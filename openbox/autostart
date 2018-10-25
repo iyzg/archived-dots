@@ -5,11 +5,10 @@ hsetroot -solid "#baa8c9"
 # Internet
 sudo NetworkManager 
 
+nm-applet &
+
 # Xresources
 xrdb -merge .Xresources &
-
-# Wifi
-nm-applet &
 
 # Shadows
 compton &
@@ -21,4 +20,4 @@ clipit &
 mpd &
 
 # Lemonbar
-./~/bin/bars/simplex &
+bash ~/bin/bars/simplex &

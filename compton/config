@@ -70,8 +70,8 @@ opacity-rule = [ "40:class_g = 'Bspwm' && class_i = 'presel_feedback'" ];
 # Fading
 fading = false;
 fade-delta = 10.0;
-fade-in-step = 0.03;
-fade-out-step = 0.03;
+fade-in-step = 0.33;
+fade-out-step = 0.33;
 # no-fading-openclose = true;
 # no-fading-destroyed-argb = true;
 fade-exclude = [
@@ -90,7 +90,7 @@ vsync = "none";
 dbe = false;
 paint-on-overlay = true;
 # sw-opti = true;
-# unredir-if-possible = true;
+ unredir-if-possible = true;
 # unredir-if-possible-delay = 5000;
 # unredir-if-possible-exclude = [ ];
 focus-exclude = [ "class_g = 'Cairo-clock'" ,
