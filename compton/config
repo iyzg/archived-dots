@@ -11,14 +11,14 @@
 #       \__\/         \__\/         \__\/         \__\/                   \__\/         \__\/    
 
 # Shadow
-shadow = false;
+shadow = true;
 no-dnd-shadow = true;
 no-dock-shadow = true;
 clear-shadow = true;
-shadow-radius = 0;
-shadow-offset-x = 0;
-shadow-offset-y = 0;
-shadow-opacity = 0;
+shadow-radius = 12;
+shadow-offset-x = -12;
+shadow-offset-y = -12;
+shadow-opacity = 0.95;
 # shadow-red = 1.0;
 # shadow-green = 0.0;
 # shadow-blue = 0.0;
@@ -28,6 +28,7 @@ shadow-exclude = [
 	"class_g = 'Conky'",
 	"class_g ?= 'Notify-osd'",
 	"class_g = 'Tilda'",
+	"class_g = 'Firefox'",
 	"class_g = 'Opera'",
 	"class_g = 'CoverGloobus'",
 	"class_g = 'Cairo-clock'",
@@ -70,8 +71,8 @@ opacity-rule = [ "40:class_g = 'Bspwm' && class_i = 'presel_feedback'" ];
 # Fading
 fading = false;
 fade-delta = 10.0;
-fade-in-step = 0.33;
-fade-out-step = 0.33;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
 # no-fading-openclose = true;
 # no-fading-destroyed-argb = true;
 fade-exclude = [
@@ -90,7 +91,7 @@ vsync = "none";
 dbe = false;
 paint-on-overlay = true;
 # sw-opti = true;
- unredir-if-possible = true;
+# unredir-if-possible = true;
 # unredir-if-possible-delay = 5000;
 # unredir-if-possible-exclude = [ ];
 focus-exclude = [ "class_g = 'Cairo-clock'" ,
@@ -119,4 +120,3 @@ wintypes:
 {
   tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
 };
-

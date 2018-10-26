@@ -1,0 +1,65 @@
+#!/bin/env bash
+
+FOREGROUND='#a1a8b9'
+MODULEBG='#131c26'
+OUTSIDEMODULEBG='#c17286'
+BACKGROUND='#b3131c26'
+TRANSPARENT='#00000000'
+
+
+# Setup stack for lemonbar
+PANEL_FIFO=/tmp/panel-fifo
+
+rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+# Lemonbar modules
+# Window
+while :; do
+	cur="$(xdotool getwindowname $(xdotool getactivewindow) | head -c 150)"
+	if [[ "$cur" ]] ; then
+		echo 'W' "$cur"
+    else
+        echo 'W' "None"
+    fi
+done > $PANEL_FIFO &
+
+# Music
+while :; do  
+    echo 'M' "$(mpc current)"
+done > $PANEL_FIFO &
+
+# Clock
+while :; do
+    echo 'C' "$(date '+%R')"
+    sleep 10
+done > $PANEL_FIFO &
+
+# Read from stack
+while read -r line < "$PANEL_FIFO" ; do
+    case $line in
+        W*)
+            # Window Output
+            welcome="%{F$FOREGROUND}%{B$MODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
+            ;;
+        C*)
+            # Clock Output
+            clock="%{F$MODULEBG}%{B$OUTSIDEMODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
+            ;;
+        M*)
+            # Music Output
+            music="%{F$FOREGROUND}%{B$MODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
+    esac
+
+    printf "%s\n" "%{l}${welcome}%{r}${music}${clock}"
+done |\
+
+    lemonbar -n "Parallel" \
+             -d \
+             -g "1920x40+0+1040" \
+             -f "Roboto" \
+             -F "$FOREGROUND" -B "$BACKGROUND" |
+
+    bash &
+
+wait
