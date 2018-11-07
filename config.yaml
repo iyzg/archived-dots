@@ -17,6 +17,7 @@ options:
         links:
             - exemplum: .config/conky/exemplum
             - popup: .config/conky/popup
+            - reflection: .config/conky/reflection
             - tersus: .config/conky/tersus
             - welcome: .config/conky/welcome
             - wip: .config/conky/WIP

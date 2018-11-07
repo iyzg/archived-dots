@@ -1,0 +1,26 @@
+#!/bin/bash
+
+workspace=$(xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}')
+
+if (( workspace == 0 )); then
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/01.png ~/.config/conky/reflection/assets/bar/01.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/02x.png ~/.config/conky/reflection/assets/bar/02.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/03x.png ~/.config/conky/reflection/assets/bar/03.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/04x.png ~/.config/conky/reflection/assets/bar/04.png)
+elif (( workspace == 1 )); then
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/01x.png ~/.config/conky/reflection/assets/bar/01.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/02.png ~/.config/conky/reflection/assets/bar/02.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/03x.png ~/.config/conky/reflection/assets/bar/03.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/04x.png ~/.config/conky/reflection/assets/bar/04.png)
+elif (( workspace == 2  )); then
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/01x.png ~/.config/conky/reflection/assets/bar/01.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/02x.png ~/.config/conky/reflection/assets/bar/02.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/03.png ~/.config/conky/reflection/assets/bar/03.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/04x.png ~/.config/conky/reflection/assets/bar/04.png)
+else
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/01x.png ~/.config/conky/reflection/assets/bar/01.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/02x.png ~/.config/conky/reflection/assets/bar/02.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/03x.png ~/.config/conky/reflection/assets/bar/03.png)
+    $(ln -sf ~/.config/conky/reflection/assets/workspace/04.png ~/.config/conky/reflection/assets/bar/04.png)
+fi
+

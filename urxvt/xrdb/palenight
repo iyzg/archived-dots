@@ -4,8 +4,8 @@
 
 #define bg    #292d3e
 #define fg    #959dcb
-#define blk   #676e95
-#define bblk  #292d3e
+#define blk   #292d3e
+#define bblk  #676e95
 #define red   #f07178
 #define grn   #c3e88d
 #define ylw   #ffcb6b
