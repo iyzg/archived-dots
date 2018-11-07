@@ -1,9 +1,9 @@
 #!/bin/env bash
 
-FOREGROUND='#a1a8b9'
-MODULEBG='#131c26'
-OUTSIDEMODULEBG='#c17286'
-BACKGROUND='#b3131c26'
+FOREGROUND='#959dcb'
+MODULEBG='#292d3e'
+OUTSIDEMODULEBG='#82aaff'
+BACKGROUND='#b3292d3e'
 TRANSPARENT='#00000000'
 
 
@@ -24,6 +24,10 @@ while :; do
     fi
 done > $PANEL_FIFO &
 
+while :; do
+    echo 'B' "$(~/bin/battery)"
+done > $PANEL_FIFO &
+
 # Music
 while :; do  
     echo 'M' "$(mpc current)"
@@ -40,7 +44,11 @@ while read -r line < "$PANEL_FIFO" ; do
     case $line in
         W*)
             # Window Output
-            welcome="%{F$FOREGROUND}%{B$MODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
+            welcome="%{F$MODULEBG}%{B$OUTSIDEMODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
+            ;;
+        B*)
+            # Window Output
+            battery="%{F$FOREGROUND}%{B$MODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
             ;;
         C*)
             # Clock Output
@@ -51,7 +59,7 @@ while read -r line < "$PANEL_FIFO" ; do
             music="%{F$FOREGROUND}%{B$MODULEBG}%{O15} ${line#?} %{O15}%{B-}%{F-}"
     esac
 
-    printf "%s\n" "%{l}${welcome}%{r}${music}${clock}"
+    printf "%s\n" "%{l}${welcome}${battery}%{r}${music}${clock}"
 done |\
 
     lemonbar -n "Parallel" \

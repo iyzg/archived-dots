@@ -1,11 +1,9 @@
 # Autostart
 # Background
-hsetroot -solid "#baa8c9"
+hsetroot -fill wallpaper/cityscapeThreeEdited.jpg
 
 # Internet
-sudo NetworkManager 
-
-nm-applet &
+sudo NetworkManager &
 
 # Xresources
 xrdb -merge .Xresources &
@@ -13,11 +11,26 @@ xrdb -merge .Xresources &
 # Shadows
 compton &
 
+# Panel
+xfce4-panel &
+
+# Wifi
+nm-applet &
+
 # Clipboard
 clipit &
 
+# Bluetooth
+blueman-applet &
+
+# Battery
+cbatticon &
+
+# Volume
+volumeicon &
+
+# Redshift
+redshift-gtk &
+
 # Music
 mpd &
-
-# Lemonbar
-bash ~/bin/bars/simplex &

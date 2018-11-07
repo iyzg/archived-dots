@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+volume=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master))
+volume=${volume::-1}
+
+if (( $volume > 83 )); then
+    echo "──────"
+elif (( $volume > 66 )); then
+    echo "─────"
+elif (( $volume > 49 )); then
+    echo "────"
+elif (( $volume > 32 )); then
+    echo "───"
+elif (( $volume > 15 )); then
+    echo "──"
+else
+    echo "─"
+fi

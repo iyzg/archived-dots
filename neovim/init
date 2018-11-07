@@ -49,6 +49,9 @@ set expandtab
 set shiftwidth=4
 set smarttab
 
+" Mouse
+:set mouse=a
+
 " XML
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
 
@@ -107,3 +110,7 @@ function! StatuslineGit()
 	let l:branchname = GitBranch()
 	return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
+
+" Keybinds
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>

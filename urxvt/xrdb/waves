@@ -1,0 +1,22 @@
+! -- Title:     waves
+! -- Author:    plasma
+! -- Created:   2018
+
+#define bg    #252a32
+#define blk   #272c34
+#define bblk  #3b434f
+#define fg    #bab7b5
+#define red   #876058
+#define grn   #6f7f71
+#define ylw   #b39580
+#define blu   #546780
+#define mag   #84787d
+#define cyn   #556f86
+#define wht   #bab7b5
+#define bred  #876058
+#define bgrn  #6f7f71
+#define bylw  #b39580
+#define bblu  #546780
+#define bmag  #84787d
+#define bcyn  #556f86
+#define bwht #dfdedd

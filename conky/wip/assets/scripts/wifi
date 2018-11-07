@@ -1,0 +1,40 @@
+#!/bin/env bash
+
+signal=$(iwconfig wlp2s0 | grep -i Link)
+signalsplit=($signal)
+
+
+STRENGTH=$(echo "${signalsplit[3]}" | tr -dc '0-9')
+
+
+if (( $STRENGTH > 56 )); then
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotOne.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotTwo.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotThree.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
+elif (( $STRENGTH > 42 )); then
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotOne.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotTwo.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotThree.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
+elif (( $STRENGTH > 28 )); then
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotOne.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotTwo.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotThree.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
+elif (( $STRENGTH > 14 )); then
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotOne.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotTwo.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotThree.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
+else
+    $(ln -sf $HOME/.config/conky/WIP/assets/notChargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotOne.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotTwo.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotThree.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFour.png)
+    $(ln -sf $HOME/.config/conky/WIP/assets/chargedDot.png $HOME/.config/conky/WIP/assets/wifi/dotFive.png)
+fi 

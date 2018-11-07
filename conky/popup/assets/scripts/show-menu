@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+conky -c $HOME/.config/conky/popup/popup.conkyrc

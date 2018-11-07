@@ -16,6 +16,7 @@ options:
         directoryName: conky
         links:
             - exemplum: .config/conky/exemplum
+            - popup: .config/conky/popup
             - tersus: .config/conky/tersus
             - welcome: .config/conky/welcome
             - wip: .config/conky/WIP

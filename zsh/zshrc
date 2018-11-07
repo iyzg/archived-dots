@@ -54,3 +54,6 @@ ENABLE_CORRECTION="true"
 # Source
 source $ZSH/oh-my-zsh.sh
 
+# if [[ ! ${DISPLAY} && ${XDG_VTNR} == 1 ]]; then
+#    startx
+#fi

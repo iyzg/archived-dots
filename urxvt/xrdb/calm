@@ -1,0 +1,23 @@
+! -- Title   Calm
+! -- Author  Plamsa
+! -- Created 2018
+
+#define bg   #344042
+#define fg   #e8dfd6
+#define blk  #232b2c
+#define bblk #232b2c
+#define red  #e5ab96
+#define bred #e5ab96
+#define grn  #7cbf9e
+#define bgrn #7cbf9e
+#define ylw  #e5c078
+#define bylw #e5c078
+#define blu  #7bbac7
+#define bblu #7bbac7
+#define mag  #7b7cc6
+#define bmag #7b7cc6
+#define cyn  #97e5bb
+#define bcyn #97e5bb
+#define wht  #e8dfd6
+#define bwht #e8dfd6
+

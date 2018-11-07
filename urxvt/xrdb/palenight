@@ -1,0 +1,22 @@
+! -- Title:     palenight
+! -- Author:    ???
+! -- Created:   ???2
+
+#define bg    #292d3e
+#define fg    #959dcb
+#define blk   #676e95
+#define bblk  #292d3e
+#define red   #f07178
+#define grn   #c3e88d
+#define ylw   #ffcb6b
+#define blu   #82aaff 
+#define mag   #c792ea
+#define cyn   #89ddff
+#define wht   #ffffff
+#define bred  #f07178
+#define bgrn  #c3e88d
+#define bylw  #ffcb6b
+#define bblu  #82aaff
+#define bmag  #c792ea
+#define bcyn  #89ddff
+#define bwht  #959dcb
