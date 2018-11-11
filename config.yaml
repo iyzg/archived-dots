@@ -1,11 +1,11 @@
 options:
     base: &base
-        dotfileDirectory: dotfiles
+        dotfileDirectory: .dots
   
     binPackage:
         directoryName: bin
         links:
-            - bin: bin
+            - bin: .bin
 
     comptonPackage:
         directoryName: compton
@@ -25,7 +25,7 @@ options:
     discordPackage:
         directoryName: discord
         links:
-            - discord: discord
+            - discord: .discord
 
     dunstPackage:
         directoryName: dunst
@@ -89,7 +89,7 @@ options:
     wallpaperPackage:
         directoryName: wallpaper
         links:
-            - wallpapers: wallpaper
+            - wallpapers: .wallpaper
 
     zshPackage:
         directoryName: zsh
