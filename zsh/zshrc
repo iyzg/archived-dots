@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # Make Scripts GLOBAL
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Set VIM as Editor

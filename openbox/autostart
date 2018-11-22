@@ -1,6 +1,6 @@
 # Autostart
 # Background
-hsetroot -fill wallpaper/cityscapeThreeEdited.jpg
+hsetroot -fill .wallpaper/mountainFourEdited.jpg
 
 # Internet
 sudo NetworkManager &
@@ -31,6 +31,3 @@ volumeicon &
 
 # Redshift
 redshift-gtk &
-
-# Music
-mpd &

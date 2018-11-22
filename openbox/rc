@@ -150,7 +150,7 @@
     <!-- Utilities -->
     <keybind key="Print">
       <action name="Execute">
-        <command>/home/plasma/bin/screeny</command>
+        <command>/home/plasma/.bin/screeny</command>
       </action>
     </keybind>
     <keybind key="W-r">

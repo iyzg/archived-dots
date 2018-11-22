@@ -1,4 +1,4 @@
-#include </home/plasma/.xrdb/skigh>
+#include </home/plasma/.xrdb/onedark>
 
 ! Colors  
 *background:   bg  
@@ -27,6 +27,7 @@ URxvt.letterSpace:     0
 URxvt.lineSpace:       0
 
 ! XFT Font Settings
+Xft.antialias: 1
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
@@ -34,4 +35,4 @@ Xft.rgba: rgb
 Xft.dpi: 96
 
 ! Font
-URxvt.font: xft:RobotoMono Nerd Font:size=9
+URxvt.font: xft:RobotoMono Nerd Font Mono:size=9

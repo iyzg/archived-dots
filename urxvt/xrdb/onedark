@@ -1,0 +1,22 @@
+! -- Title:     onedark
+! -- Author:    unknown
+! -- Created:   2018
+
+#define bg    #282c34
+#define blk   #545862
+#define bblk  #545862
+#define fg    #abb2bf
+#define red   #e06c75
+#define grn   #98c379
+#define ylw   #e5c07b
+#define blu   #61afef
+#define mag   #c678dd
+#define cyn   #56b6c2
+#define wht   #abb2bf
+#define bred  #e06c75
+#define bgrn  #98c379
+#define bylw  #e5c07b
+#define bblu  #61afef
+#define bmag  #c678dd
+#define bcyn  #56b6c2
+#define bwht  #c8ccd4

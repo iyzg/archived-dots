@@ -31,7 +31,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " IndentLine 
-let g:indentLine_char = '┆'
+let g:indentLine_char = '|'
 
 " Colorscheme 
 colorscheme wal

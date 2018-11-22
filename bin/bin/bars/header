@@ -1,0 +1,64 @@
+#!/bin/env bash
+
+FOREGROUND='#abb2bf'
+BACKGROUND='#282c34'
+TRANSPARENT='#00000000'
+
+# Setup stack for lemonbar
+PANEL_FIFO=/tmp/panel-fifo
+
+rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+# Lemonbar modules
+# Name
+while :; do
+    echo 'N' "Plasma"
+    sleep 1800
+done > $PANEL_FIFO &
+
+# Music
+while :; do
+    echo 'M' "$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:org.mpris.MediaPlayer2.Player string:Metadata | sed -n '/title/{n;p}' | cut -d '"' -f 2)"
+    sleep 10
+done > $PANEL_FIFO &
+
+# Clock
+while :; do
+    echo 'C' "$(date "+%R")"
+    sleep 10
+done > $PANEL_FIFO &
+
+# Test Icon
+while :; do
+    echo 'I' "?"
+done > $PANEL_FIFO &
+# Read from stack
+while read -r line < "$PANEL_FIFO" ; do
+    case $line in
+        N*)
+            # Welcome Output
+            name="%{F$FOREGROUND}%{B$BACKGROUND} ${line#?} %{B-}%{F-}"
+            ;;
+        M*)
+            # Music output
+            music="%{F$FOREGROUND}%{B$BACKGROUND}%{T2}%{O20} ${line#?} %{T-}%{B-}%{F-}"
+            ;;
+        C*)
+            # Clock Output
+            clock="%{F$FOREGROUND}%{B$BACKGROUND}%{T2} ${line#?} %{T-}%{O20}%{B-}%{F-}"
+            ;;
+    esac
+
+    printf "%s\n" "%{l}${music}%{c}${name}%{r}${clock}"
+done |\
+
+    lemonbar -n "Simplex" \
+             -d \
+             -g "1700x60+110+0" \
+             -o 4 -f "Agatha Needs Flesh:size=30" -o -10 -f "Arcon:size=11" -f "Font Awesome 5 Free:size=11"\
+             -F "$FOREGROUND" -B "$BACKGROUND" |
+
+    bash &
+
+wait
