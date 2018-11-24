@@ -1,0 +1,23 @@
+! -- Title:     nostalgia
+! -- Author:    plasma
+! -- Created:   2018
+
+#define fg   #f0f0f1
+#define bg   #564e58
+#define blk  #8e8590
+#define bblk #8e8590
+#define red  #ed9793
+#define bred #ed9793
+#define grn  #c1e887
+#define bgrn #c1e887
+#define ylw  #f0ee97
+#define bylw #f0ee97
+#define blu  #95cbef
+#define bblu #95cbef
+#define mag  #e1a6ed
+#define bmag #e1a6ed
+#define cyn  #75b2df
+#define bcyn #75b2df
+#define wht  #c5c5c6
+#define bwht #dbdbdc
+

@@ -1,4 +1,4 @@
-#include </home/plasma/.xrdb/onedark>
+#include </home/plasma/.xrdb/nostalgia>
 
 ! Colors  
 *background:   bg  
@@ -35,4 +35,5 @@ Xft.rgba: rgb
 Xft.dpi: 96
 
 ! Font
-URxvt.font: xft:RobotoMono Nerd Font Mono:size=9
+!URxvt.font: xft:RobotoMono Nerd Font Mono:size=9
+URxvt.font: xft:Pokémon DP Pro:pixelsize=16

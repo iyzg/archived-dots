@@ -19,7 +19,7 @@ done > $PANEL_FIFO &
 
 # Music
 while :; do
-    echo 'M' "$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:org.mpris.MediaPlayer2.Player string:Metadata | sed -n '/title/{n;p}' | cut -d '"' -f 2)"
+    echo 'M' "$(playerctl metadata artist) - $(playerctl metadata title)"
     sleep 10
 done > $PANEL_FIFO &
 
@@ -56,7 +56,7 @@ done |\
     lemonbar -n "Simplex" \
              -d \
              -g "1700x60+110+0" \
-             -o 4 -f "Agatha Needs Flesh:size=30" -o -10 -f "Arcon:size=11" -f "Font Awesome 5 Free:size=11"\
+             -o 4 -f "Agatha Needs Flesh:size=30" -o -10 -f "Nexa Light:size=11" -o -10 -f "RobotoMono Nerd Font:size=11"\
              -F "$FOREGROUND" -B "$BACKGROUND" |
 
     bash &
