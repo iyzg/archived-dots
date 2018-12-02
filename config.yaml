@@ -16,6 +16,7 @@ options:
         directoryName: conky
         links:
             - exemplum: .config/conky/exemplum
+            - photophraphy: .config/conky/photophraphy
             - popup: .config/conky/popup
             - prompt: .config/conky/prompt
             - reflection: .config/conky/reflection
