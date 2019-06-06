@@ -1,9 +1,9 @@
 <div align="center">
 	<h3>Plasma's Dotfiles, Made With ❤</h3>
 	<!-- current desktop -->
-	<img src="https://user-images.githubusercontent.com/32868356/49346497-67e32480-f661-11e8-9d50-e529390e38bc.png">
+	<img src="https://user-images.githubusercontent.com/32868356/46917395-bb57c100-cf94-11e8-90d6-fe4169873452.png">
 
-`current setup` `conky: photophraphy`
+`current setup` `WIP`
 
 </div>
 
