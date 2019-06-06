@@ -3,7 +3,7 @@
 	<!-- current desktop -->
 	<img src="https://user-images.githubusercontent.com/32868356/46917395-bb57c100-cf94-11e8-90d6-fe4169873452.png">
 
-`current setup` `WIP`
+`current setup` `Mare`
 
 </div>
 
