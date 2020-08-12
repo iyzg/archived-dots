@@ -7,20 +7,9 @@
 
 </div>
 
-## Introduction
-So unlike most people, I had just about the most unorthodox reason to switching to Linux. I loved the way it looked.
-I barely did any research, just grabbed an .iso and wiped my hard drive free of Windows. 5 monthes later, no regrets. Ricing 
-Linux has become one of my favorite pastimes and is a passion I'll continue to follow for a long time to come.
-
 ## Disclaimer
 These dotfiles are to save **my setups.** Be warned, they probably won't work on your system without a bit of tinkering around.
 I recommend just cherry picking what you need instead of copying my exact setup. 
-
-## Dotfile Manager
-Sponsored Message: I use my newly created dotfile manager, [Sequestrum](https://github.com/iiPlasma/sequestrum) to manage my
-dotfiles. It's made specifically for managing dotfiles instead of something more general like Stow. It's got advanced features
-like a universal config, one step complete install, automated command running, and makes your dotfiles a lot prettier than one
-that use Stow! If you'd like, you can go check it out and use it. 
 
 ## Overview
 - Window Manager: `openbox`
